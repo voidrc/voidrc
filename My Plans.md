@@ -191,13 +191,3 @@ At this stage, you're ready to dive into more advanced concepts, such as exploit
     - **Advanced**: Writing custom exploits or payloads.
 
 ---
-
-### **Phase 5: Continuous Learning**
-
-- **CTF Challenges**: Participate in Capture The Flag (CTF) competitions like Hack The Box, TryHackMe, or OverTheWire.
-- **Contribute to Open Source**: Work on security tools and frameworks.
-- **Networking**: Join security communities, attend conferences, and network with professionals.
-
----
-
-This roadmap will give you a comprehensive foundation for cybersecurity, covering everything from scripting automation to advanced exploitation techniques. Would you like to get more details on a specific phase or a particular resource?
