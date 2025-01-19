@@ -1,5 +1,5 @@
 # 💫 About Me:
-📚 Student of "School-21" IT school, Samarkand<br>📖 Currently Learning Bash, C/C++, Python, GO, Ruby<br>🔴 Interested in Red Teaming<br>🎮 Hobbies: Gaming, Linux Ricing, Walking and Sleeping 😁
+📚 Student of "School-21" IT school<br>📖 Currently Learning Bash, C/C++, Python, GO, Ruby<br>🔴 Interested in Red Teaming<br>🎮 Hobbies: Gaming, Linux Ricing, Walking and Sleeping 😁
 
 # 💻 Tech Stack:
 [![Bash Script](https://img.shields.io/badge/bash_script-%23121011.svg?style=plastic&logo=gnu-bash&logoColor=white)](https://github.com/void-inject/My_Automation_Scripts)
