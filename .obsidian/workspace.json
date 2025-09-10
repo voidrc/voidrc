@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Notes/02_Linux/01) Understanding.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "01) Understanding"
             }
           }
         ]
@@ -170,27 +170,31 @@
       "templates:Insert template": false
     }
   },
-  "active": "287bec56f339b91b",
+  "active": "b046921b6ab34e8e",
   "lastOpenFiles": [
-    "Persona.md",
-    "README.md",
-    "Notes/05_Scripting/Scripting.md",
+    "Notes/02_Linux/01) Index Map.md",
+    "Notes/01_Set-Up/Untitled.md",
+    "Notes/02_Linux/01) Understanding.md",
+    "Notes/02_Linux/Upgrading Shell.md",
+    "Notes/02_Linux/partitioning.md",
+    "Notes/02_Linux/GPG.md",
+    "Notes/07_To-Sort/Git.md",
+    "Notes/02_Linux/Shell.md",
     "Notes/Root2Red.md",
+    "README.md",
+    "LICENSE",
+    "Persona.md",
+    "Notes/05_Scripting/Scripting.md",
     "Resources/resources.md",
-    "Notes/02_Linux/00) Practical Commands.md",
-    "Notes/02_Linux/1) Introduction.md",
     "Notes/01_Set-Up/02) Time Machine.md",
     "Notes/04_Home-Lab/VirtualBox.md",
     "Notes/01_Set-Up/01) Workspace.md",
     "2025-09-10.md",
-    "Notes/_templates/5_Structure/Quotes.md",
+    "_templates/5_Structure/Quotes.md",
     "Untitled.base",
     "Untitled.canvas",
     "Notes/02_Linux/VeraCrypt.md",
-    "Notes/02_Linux/GPG.md",
     "Notes/02_Linux/TimeShift.md",
-    "Notes/02_Linux/Git.md",
-    "Notes/02_Linux/Upgrading Shell.md",
     "Notes/07_To-Sort/Obsidian.md",
     "Courses/Red Team Clang/Red Teaming  Exploit Development with Assembly and C.zip.003",
     "Courses/Red Team Clang/Red Teaming  Exploit Development with Assembly and C.zip.002",
