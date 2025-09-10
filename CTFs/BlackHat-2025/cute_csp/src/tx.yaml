@@ -1,0 +1,3 @@
+- {amount: 2000000, currency: HAX, op: BUY}
+- {amount: 2000000, currency: HAX, op: SELL}
+- {amount: 1, currency: FL, op: BUY}
