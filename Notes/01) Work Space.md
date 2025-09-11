@@ -45,11 +45,11 @@ BOOM. now you’ve got a **high-performance, slick-looking, arsenal-loaded machi
 
 ---
 ## bonus
-OS forged, beast is alive. now it needs gear. here’s what i strap on — take it, tweak it, or choke on it — your choice.
+here’s the list of what i use for daily life — take it, tweak it, or choke on it — your choice.
 - **Firefox** → visor, stripped & hardened.
 - **Proton stack** (mail, pass, drive, vpn, whatever) → privacy armor.
 - **PWNdoc** → clean reports when you gotta look “professional.”
 - **Ghostwriter** → markdown hitman, no distractions.
 - **Obsidian** → brain-vault, notes + logs synced.
-- **Peek** → record your moves, prove the kill (didn't work smoothly with my set-up.
-- **RedLogs (soon)** → my own logging beast in the making.
+- **Peek** → record your moves, prove the kill (didn't work smoothly with my set-up)
+- **RedLogs (soon)** → my own logging beast under development.

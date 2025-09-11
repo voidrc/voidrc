@@ -11,6 +11,8 @@ since i roll with **cachyos**, guide is tuned for that. if you use another distr
 
 ---
 ## Virtual Box
+type 2 hyprvisor, complete isolation, commonly used, but resource heavy
+
 ### 1. install required packages
 
 make sure you got every single virtualbox piece:
@@ -59,9 +61,10 @@ sudo virtualbox-secureboot enroll
 
 reboot + enroll key in bios/uefi.
 
-### 6. shared folders
-
-still cooking. until then? google like the rest of the plebs.
+### 6. import extension pack
+```bash
+VBoxManage extpack install --replace /../../../Oracle_VirtualBox_Extension_Pack.vbox-extpacp
+```
 
 ### troubleshooting
 
@@ -78,3 +81,26 @@ sudo modprobe vboxdrv vboxnetadp vboxnetflt
 ```
 
 ---
+## KVM
+type 1 hyprvisor, shared kernel with host, medium resource usage
+
+---
+## docker/podman
+containers, process isolation, minimal resource usage
+
+---
+## hypervisors vs containers
+
+you prob’ly saw “type 1 vs type 2 hypervisor” and thought: _wtf is this alphabet soup?_ 
+here’s the brain dump:
+- **type 1 (bare-metal)** → runs **directly on hardware**. no babysitter OS. faster, tighter, cleaner. think kvm, xen, esxi. metal talks to vm without middleman.
+- **type 2 (hosted)** → runs **on top of your os**. it’s needy. asks host kernel for everything. easier for lazy setups (virtualbox, vmware workstation) but slower.
+
+
+and containers?
+forget fake hardware. containers don’t boot another os — they just **lock processes into padded cells** with their own fs + net stack + namespaces. still sharing host kernel.  
+lightweight, quick, but isolation ain’t bulletproof like a vm.
+
+- type 1 = boss.
+- type 2 = beggar.
+- containers = jail cells for apps.
