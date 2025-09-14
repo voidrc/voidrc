@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/VBoxManage/VM creation.md",
+                "file": "Notes/unsorted...WayDroid.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "VM creation"
+              "title": "unsorted...WayDroid"
             }
           }
         ]
@@ -172,8 +172,9 @@
   },
   "active": "00948af3a59d0a6d",
   "lastOpenFiles": [
-    "Notes/03) Play Ground.md",
     "Notes/VBoxManage/VM creation.md",
+    "Notes/unsorted...WayDroid.md",
+    "Notes/03) Play Ground.md",
     "Notes/VBoxManage",
     "Notes/02) Time Machine.md",
     "Notes/01) Work Space.md",
