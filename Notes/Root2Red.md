@@ -72,7 +72,7 @@
 ### **1. Build a Strong Foundation in Offensive Security**
 
 #### **Scripting and Programming**
-- [Scripting Road-Map](Notes/05_Scripting/Scripting.md)
+- [Scripting Road-Map](Scripting.md)
 
 #### **Networking (Advanced)**
 - Learn subnetting, VLANs, and network segmentation.
