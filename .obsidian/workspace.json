@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Notes/WiFi Cracking.md",
+                "file": "Red_Team/Recon.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WiFi Cracking"
+              "title": "Recon"
             }
           }
         ]
@@ -170,31 +170,31 @@
       "templates:Insert template": false
     }
   },
-  "active": "aa3a18a3256767b5",
+  "active": "287bec56f339b91b",
   "lastOpenFiles": [
+    "Red_Team/DOS.md",
+    "Red_Team/WiFi Cracking.md",
     "Notes/Workflow.md",
-    "Notes/WiFi Cracking.md",
     "Notes/WayDroid.md",
     "Notes/VeraCrypt.md",
     "Notes/Upgrading Shell.md",
-    "Notes/Scanning and Enemuration.md",
+    "Red_Team/Scanning and Enemuration.md",
     "Notes/ssh.md",
-    "Notes/Recon.md",
-    "Notes/Python.md",
+    "Red_Team/Recon.md",
+    "Automation/Python.md",
     "Notes/partitioning.md",
     "Notes/Protocols.md",
     "Notes/NMAP.md",
     "Notes/Net Fundamentals.md",
     "Notes/Connections.md",
     "Notes/Addressing.md",
-    "Notes/00) Shadow-Lab.md",
-    "Notes/00) Scripting.md",
-    "Notes/00) Root2Red.md",
+    "Labs/00) Shadow-Lab.md",
+    "Automation/00) Scripting.md",
+    "Root2Red.md",
     "Notes/Obsidian.md",
-    "Notes/Links for Projects.md",
-    "Notes/HoneyPot.md",
+    "Automation/Links for Projects.md",
+    "Blue_Team/HoneyPot.md",
     "Notes/GPG.md",
-    "Notes/DOS.md",
     "Notes/Git.md",
     "Notes/BIOS_flashing.md",
     "Notes/VirtualBox.md",
