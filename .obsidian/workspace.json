@@ -11,10 +11,14 @@
             "id": "aa3a18a3256767b5",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Notes/WiFi Cracking.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "WiFi Cracking"
             }
           }
         ]
@@ -166,42 +170,42 @@
       "templates:Insert template": false
     }
   },
-  "active": "287bec56f339b91b",
+  "active": "aa3a18a3256767b5",
   "lastOpenFiles": [
-    "Notes/VBoxManage/VM creation.md",
-    "Notes/03) Play Ground.md",
-    "Notes/unsorted...WayDroid.md",
-    "Notes/VBoxManage",
-    "Notes/02) Time Machine.md",
-    "Notes/01) Work Space.md",
-    "Notes/VirtualBox.md",
-    "Notes/02_Linux/01) Understanding.md",
-    "Notes/02_Linux/01) Index Map.md",
-    "Notes/01_Set-Up/Untitled.md",
+    "Notes/Workflow.md",
+    "Notes/WiFi Cracking.md",
+    "Notes/WayDroid.md",
+    "Notes/VeraCrypt.md",
     "Notes/Upgrading Shell.md",
+    "Notes/Scanning and Enemuration.md",
+    "Notes/ssh.md",
+    "Notes/Recon.md",
+    "Notes/Python.md",
     "Notes/partitioning.md",
+    "Notes/Protocols.md",
+    "Notes/NMAP.md",
+    "Notes/Net Fundamentals.md",
+    "Notes/Connections.md",
+    "Notes/Addressing.md",
+    "Notes/00) Shadow-Lab.md",
+    "Notes/00) Scripting.md",
+    "Notes/00) Root2Red.md",
+    "Notes/Obsidian.md",
+    "Notes/Links for Projects.md",
+    "Notes/HoneyPot.md",
     "Notes/GPG.md",
+    "Notes/DOS.md",
     "Notes/Git.md",
-    "Notes/02_Linux/Shell.md",
-    "Notes/Root2Red.md",
-    "README.md",
+    "Notes/BIOS_flashing.md",
+    "Notes/VirtualBox.md",
+    "Notes/VBoxManage",
     "LICENSE",
-    "Persona.md",
-    "Notes/Scripting.md",
-    "Resources/resources.md",
-    "2025-09-10.md",
-    "_templates/5_Structure/Quotes.md",
     "Untitled.base",
     "Untitled.canvas",
-    "Notes/VeraCrypt.md",
-    "Notes/02_Linux/TimeShift.md",
-    "Notes/07_To-Sort/Obsidian.md",
     "Courses/Red Team Clang/Red Teaming  Exploit Development with Assembly and C.zip.003",
     "Courses/Red Team Clang/Red Teaming  Exploit Development with Assembly and C.zip.002",
     "Courses/Red Team Clang/Red Teaming  Exploit Development with Assembly and C.zip.001",
     "Courses/Red Team Clang",
-    "Courses/C_Programming_A_Modern_Approach_2nd_EdC89,_c99_King_by_.pdf",
-    "Notes/01_Set-Up/0) Setting Up.md",
-    "Notes/01_Set-Up/03) Local Lab.md"
+    "Courses/C_Programming_A_Modern_Approach_2nd_EdC89,_c99_King_by_.pdf"
   ]
 }
