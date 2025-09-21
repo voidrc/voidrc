@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "00) Resources/resources.md",
+                "file": "01) Set-Up/04) Play Ground II.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "resources"
+              "title": "04) Play Ground II"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 223.5
+    "width": 222.5
   },
   "right": {
     "id": "d4483c3daa6f858a",
@@ -170,8 +170,13 @@
       "templates:Insert template": false
     }
   },
-  "active": "287bec56f339b91b",
+  "active": "aa3a18a3256767b5",
   "lastOpenFiles": [
+    "01) Set-Up/03) Play Ground I.md",
+    "01) Set-Up/04) Play Ground II.md",
+    "01) Set-Up/01) Work Space.md",
+    "00) Resources/resources.md",
+    "00) Resources/Root2Red.md",
     "04) Red_Team/Recon.md",
     "04) Red_Team/DOS.md",
     "04) Red_Team/WiFi Cracking.md",
@@ -184,20 +189,15 @@
     "03) Automation/Python.md",
     "01) Set-Up/partitioning.md",
     "Notes/Protocols.md",
-    "01) Set-Up/NMAP.md",
+    "04) Red_Team/NMAP.md",
     "Notes/Net Fundamentals.md",
     "Notes/Connections.md",
     "Notes/Addressing.md",
     "02) Labs/00) Shadow-Lab.md",
     "00) Resources/Scripting.md",
-    "00) Resources/Root2Red.md",
     "Notes/Obsidian.md",
     "00) Resources/Links for Projects.md",
     "05) Blue_Team/HoneyPot.md",
-    "01) Set-Up/GPG.md",
-    "Notes/Git.md",
-    "01) Set-Up/BIOS_flashing.md",
-    "Notes/VirtualBox.md",
     "01) Set-Up/VBoxManage",
     "LICENSE",
     "Untitled.base",

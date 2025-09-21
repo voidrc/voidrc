@@ -13,6 +13,8 @@ since i roll with **cachyos**, guide is tuned for that. if you use another distr
 ## Virtual Box
 type 2 hyprvisor, complete isolation, commonly used, but resource heavy
 
+> KVM or ProxMox VE can be considered type 1 hyprvisors.
+
 ### 1. install required packages
 
 make sure you got every single virtualbox piece:
@@ -76,4 +78,4 @@ sudo modprobe vboxdrv vboxnetadp vboxnetflt
 ```
 
 ---
-## Containers
+now go kick ass in that fake os in your virtualbox — break shit, respawn snaps, and keep your real rig unscathed.
