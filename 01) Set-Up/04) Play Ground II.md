@@ -8,3 +8,4 @@ by now you know docker’s just a container engine — a tiny, quirky beast with
 ```bash
 yay -Sy docker-desktop
 ```
+

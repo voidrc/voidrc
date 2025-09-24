@@ -29,19 +29,19 @@ Some tools you can use
   
 Now, let's see how to use hping to scan the network. It really depends what distro you are using, if it's penetration based, hping will most likely be embedded into it, in my case, I'm using Fedora and it's not. But let's keep on-topic.  
 Spoiler (Click to Hide)If you use hping -h you will see detailed usage of hping3 commands, but as of now we will stick to scan mode (--scan)  
-![[Image: RUeyMny.jpg]](https://i.imgur.com/RUeyMny.jpg)  
+![](https://i.imgur.com/RUeyMny.jpg)  
 The first parameter is scan to use hping in scan mode, now we must say in which ports we are going to scan, in the picture above I'm scanning from 0 to 80. Or maybe you can give a port range like this with a - between the lower bound and the upper one, another way is to separate them by a comma. After that I set a SYN flag of the packet (Because all TCP connections start with a SYN packet.) then we proceed with the next argument which is our target (IP Address). Hit enter to start the scan  
-![[Image: SRvGAiy.jpg]](https://i.imgur.com/SRvGAiy.jpg)  
+![[Image: SRvGAiy.jpg](https://i.imgur.com/SRvGAiy.jpg)  
 Here we have the responding ports, and flags column says what the reply is. We sent SYN packets and get SYN-ACK packets, meaning the port is open and accessible to us.  
   
 DISCLAIMER: This is for educational purposes only, don't use it for illegal activities.  
 Now I'd like to show you how to perform an IP-Spoofed DoS using the same tool. Now I'm going to attack my own server, before that i need to ensure myself I'm having a connection.  
 Spoiler (Click to Hide)  
-![[Image: PJwiZkW.jpg]](https://i.imgur.com/PJwiZkW.jpg)  
+![[Image: PJwiZkW.jpg](https://i.imgur.com/PJwiZkW.jpg)  
 Okay, now the first parameter should be --flood (That sends packets as fast as possible, now to make it a SYN flood attack, we should set a -S parameter, since it's a legitimate TCP handshake, the server will try to respond to all the packets at the start of the TCP communication) now we will use -V for verbose mode (meaning we are going to see the results of all the sent packets), then we are going for --rand-source (assuming by the name, this will randomize the source ip addresses as if they are requested by different systems). Now you have to give the target domain.  
-![[Image: 4IazCjf.jpg]](https://i.imgur.com/4IazCjf.jpg) Now because we are in flood mode, no replies will be shown.  
+![[Image: 4IazCjf.jpg](https://i.imgur.com/4IazCjf.jpg) Now because we are in flood mode, no replies will be shown.  
 Now you can try to browse some stuff and see the response time (it will be loading really slow). To stop the flood you simply have to press ctrl + c. After that you will see all the SYN packets being sent to the victim server.  
-![[Image: tHxAN0o.jpg]](https://i.imgur.com/tHxAN0o.jpg)  
+![[Image: tHxAN0o.jpg](https://i.imgur.com/tHxAN0o.jpg)  
 No packets will be recieved because we randomised the source address  
   
   

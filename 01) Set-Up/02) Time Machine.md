@@ -150,10 +150,3 @@ last-resort: clone your entire disk bit by bit.
 - **cons**: slower than CLI clonezilla.
 - **use-case**: quick full-disk backup before experiments.
 
----
-## my failsafe stack
-
-- snapper → insta-rollback after updates. patch borks? reboot, pick snapshot, done.  
-- rebuild.sh → living on github. wipes clean, pulls dots + pkgs, spawns fresh workspace like nothing happened.  
-
-this = quick jump back in time + scorched-earth reset. two blades, always sharp.
