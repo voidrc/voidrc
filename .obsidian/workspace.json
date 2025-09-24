@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "04) Red_Team/WiFi Cracking.md",
+                "file": "Linux/01) Installing Distro.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "WiFi Cracking"
+              "title": "01) Installing Distro"
             }
           }
         ]
@@ -172,11 +172,13 @@
   },
   "active": "4e050b48762b1954",
   "lastOpenFiles": [
+    "VirtualBox/Installation.md",
+    "01) Set-Up/03) Play Ground I.md",
+    "Linux/01) Installing Distro.md",
+    "VirtualBox",
+    "04) Red_Team/WiFi Cracking.md",
     "04) Red_Team/Scanning and Enemuration.md",
     "04) Red_Team/DOS.md",
-    "Linux/01) Installing Distro.md",
-    "Linux/VirtualBox.md",
-    "01) Set-Up/03) Play Ground I.md",
     "01) Set-Up/02) Time Machine.md",
     "01) Work Space.md",
     "README.md",
@@ -185,7 +187,6 @@
     "00) Resources/resources.md",
     "00) Resources/Root2Red.md",
     "04) Red_Team/Recon.md",
-    "04) Red_Team/WiFi Cracking.md",
     "Notes/Workflow.md",
     "01) Set-Up/WayDroid.md",
     "01) Set-Up/VeraCrypt.md",
@@ -198,7 +199,6 @@
     "Notes/Net Fundamentals.md",
     "Notes/Connections.md",
     "Notes/Addressing.md",
-    "02) Labs/00) Shadow-Lab.md",
     "01) Set-Up/VBoxManage",
     "LICENSE",
     "Untitled.base",
