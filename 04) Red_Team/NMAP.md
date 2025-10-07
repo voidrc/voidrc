@@ -103,8 +103,8 @@ Nmap is a powerful tool with a variety of features designed for network discover
 | nmap --scan-delay {time}              | Set delay between packets during a scan                      |
 | nmap --data-length {length}           | Adjust packet data length for probes                         |
 | nmap --ttl {value}                    | Set TTL (Time-To-Live) value for packets                     |
-| nmap -D {decoys} {target}             | Use decoys to hide the dource of the scan                    |
-| nmap  --spoof-mac {MAC address}       | Spoof= the MAC address of the scanning machine               |
+| nmap -D {decoys} {target}             | Use decoys to hide the source of the scan                    |
+| nmap  --spoof-mac {MAC address}       | Spoof the MAC address of the scanning machine                |
 | nmap --exclude {target}               | Exclude specific targets from the scan                       |
 | nmap --exclude-file {file}            | Exclude targets listed in a file                             |
 | nmap --reason                         | Show reason for host or port state changes                   |
