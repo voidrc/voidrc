@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "To-Sort/VeraCrypt.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "VeraCrypt"
             }
           }
         ]
@@ -171,13 +171,28 @@
   },
   "active": "5433c0565572f945",
   "lastOpenFiles": [
+    "To-Sort/Upgrading Shell.md",
+    "Linux/partitioning.md",
+    "To-Sort/GPG.md",
+    "To-Sort/BIOS_flashing.md",
+    "Linux/BackUp_Options.md",
+    "01) Set-Up/04) Play Ground II.md",
+    "01) Set-Up/03) Play Ground I.md",
+    "Labs/00) Shadow-Lab.md",
+    "Scripting/Python.md",
+    "To-Sort/WiFi Cracking.md",
+    "To-Sort/Scanning and Enemuration.md",
+    "To-Sort/Recon.md",
+    "To-Sort/NMAP.md",
+    "To-Sort/DOS.md",
+    "To-Sort/HoneyPot.md",
+    "README.md",
     "Ethical Hacking",
     "Ethical Hacking/01. Work Space.md",
     "Scripts/RedLogs/VeraCrypt.md",
     "Scripts/RedLogs/transfer.sh",
     "Scripts/RedLogs/redlogs.sh",
     "Scripts/RedLogs",
-    "README.md",
     "Scripts/air_force.md",
     "Scripts/air_force.h",
     "Linux/03. History.md",

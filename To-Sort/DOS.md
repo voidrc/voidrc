@@ -43,8 +43,5 @@ Okay, now the first parameter should be --flood (That sends packets as fast as p
 Now you can try to browse some stuff and see the response time (it will be loading really slow). To stop the flood you simply have to press ctrl + c. After that you will see all the SYN packets being sent to the victim server.  
 ![[Image: tHxAN0o.jpg](https://i.imgur.com/tHxAN0o.jpg)  
 No packets will be recieved because we randomised the source address  
-  
-  
-That was as of now, I'm heading out but i will edit the thread later on with some more content, such as IPSIDS evasion and timing scans.
 
 Chains of habit are too light to be felt until they are too heavy to be broken.
