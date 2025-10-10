@@ -1,114 +1,116 @@
 
-# 🧭 **[Main Goal / Project Title]**
-
-_A short description or mission statement for this phase._
+_Get into Red Teaming and Malware Development by Securing SysAdmin Job for gaining hands-on experience_
 
 ---
 
 ## **Stage 1: [Secure a SysAdmin Job]**
 
-### **Focus Areas**
-
 #### **[Linux Administration]**
 - **Reference**
-  - [What is Linux Adminstration](https://www.geeksforgeeks.org/linux-unix/what-is-linux-system-administration/)
+	- [What is Linux Adminstration?](https://www.geeksforgeeks.org/linux-unix/what-is-linux-system-administration/)
 - **Books**
-  - *The Linux Command Line* — William Shotts
-  - *How Linux Works* — Brian Ward
+	- *The Linux Command Line* — William Shotts
+	- *How Linux Works* — Brian Ward
 - **Free Resources**
-  - [Linux Journey](https://linuxjourney.com)
-  - [OverTheWire](https://overthewire.org/wargames/bandit)
+	- [Linux Journey](https://linuxjourney.com)
+	- [OverTheWire](https://overthewire.org/wargames/bandit)
 - **Scripting**
-  - [Bash](Scripting.md#Bash) 
+	- [Bash](Scripting.md#Bash) 
 - **Notes**
-  - [Linux](../Linux/)
-#### **[Skill / Topic 2]**
-- (same structure)
+	- [Linux](../Linux/01.%20Installing%20Distro.md)
 
----
+#### **[Windows Administration]**
+- **Reference**
+	- [What is Windows Adminstration?](https://resumecat.com/blog/what-does-a-windows-administrator-do)
+- **Books**
+	- *Windows Server 2025 Administration Fundamentals* — Bekim Dauti
+- **Free Resources**
+	- [Microsoft Learn](https://learn.microsoft.com/)
+- **Scripting**
+	- [PowerShell](Scripting.md#PowerShell) 
+- **Notes**
+	- [Windows](../Windows/)
 
-### **Certifications**
-- **[Certification Name]**
-  - Purpose or focus area
-  - [Official Link](https://example.com)
+#### **[Network Administration]**
+- **Reference**
+	- [What is Network Adminstration?](https://www.geeksforgeeks.org/computer-networks/what-does-a-network-administrator-do/)
+- **Books**
+	- *Computer Networking: A Top-Down Approach* — Kurose & Ross
+	- *Network Warrior* — Gary Donahue
+	- *The TCP/IP Guide* — Charles Kozierok
+- **Free Resources**
+	- [Packet Tracer](https://www.netacad.com/courses/networking-basics?courseLang=en-US)
+	- [ProfessorMesser](https://www.professormesser.com/network-plus/)
+	- [Practical Networking](https://www.practicalnetworking.net/)
+- **Notes**
+	- [Networking](../Networking/)
 
----
+#### **[Certifications]**
+- **CompTIA Linux+**
+	- Proves Your Linux Administration Skills
+	- [Official Link](https://www.comptia.org/en-us/certifications/linux/)
+- **CompTIA Server+**
+	- Validates Your Skills In Server Installation, Management, And Troubleshooting
+	- [Official Link](https://www.comptia.org/en-us/certifications/server/)
+- **CompTIA Network+**
+	- Validates Foundational Networking Knowledge
+	- [Official Link](https://www.comptia.org/en-us/certifications/network/)
 
-### **Projects / Practice**
-- **Lab Setup**
-  - Virtualization tools, OS, configurations
+#### **[Build Home Lab]**
+- **Tools**: 
+	- VirtualBox
+	- ProxMox VE
 - **Tasks**
-  - Brief list of practice tasks or goals
+	- Linux Server
+	- Windows Server with Active Directory
+	- Simulate Networking (Use Packet Tracer to map out)
 
----
-
-### **Portfolio / Resume**
-- Key highlights, what to document or show publicly
-
----
-
-### **Job / Application Plan**
-- Target roles or companies
-- Platforms to apply
-- Keywords or skills to emphasize
-
----
-## **Stage 1: Short-Term Goal – **
-
-#### **Linux Administration (High Priority)**
-- _Free Resources_:
-
-- _Scripting_:
-	- [Bash](Scripting.md#Bash)
-
-#### **Windows Administration (Important for Mixed Environments)**
-- _Books_:
-    - _“Windows Server 2019 Administration Fundamentals” by Bekim Dauti_
-- _Free Resources_:
-    - Microsoft Learn: [https://learn.microsoft.com](https://learn.microsoft.com/)
-- _Scripting_:
-	- [PowerShell](Scripting.md#PowerShell)
-
-#### **Networking Basics**
-- _Books_:
-    - _“Computer Networking: A Top-Down Approach” by Kurose and Ross_
-    - _“The TCP/IP Guide” by Charles Kozierok_
-- _Free Resources_:
-    - Cisco Packet Tracer: [https://www.netacad.com/courses/packet-tracer](https://www.netacad.com/courses/packet-tracer)
-    - Networking tutorials: [https://networklessons.com](https://networklessons.com/)
-
-#### **Backup and Recovery**
-- Tools: `rsync`, `tar`, and commercial tools like Veeam.
-- Understand disaster recovery planning and testing.
-
-### **Certifications (Quick Wins)**
-
-- **CompTIA Linux+** (or LPIC-1): Proves your Linux administration skills.
-- **CompTIA Network+**: Validates foundational networking knowledge.
-- **Microsoft Certified: Azure Administrator Associate** (optional for Windows-heavy roles).
-
-### **Job Preparation**
-
-#### **Build a Home Lab**
-- Use virtualization tools like VirtualBox, or Proxmox.
-- Set up:
-  - A Linux server (e.g., Ubuntu Server, CentOS, or Arch Linux).
-  - A Windows server with Active Directory.
-  - Simulate networking with VLANs and virtual routers (e.g., pfSense).
-
-#### **Resume and Portfolio**
+#### **[Portfolio / Resume]**
 - Highlight hands-on experience from your lab.
 - Showcase any scripts or projects on GitHub.
 - Include certifications in your resume.
-
-#### **Apply for Jobs**
-- Target entry-level SysAdmin or IT support roles with SysAdmin tasks.
-- Use platforms like LinkedIn, Indeed, and company career pages.
-
+#### **[Job / Application Plan]**
+- **Targets**:
+	- **Junior System Administrator / SysAdmin**
+	- **IT Support Specialist / Helpdesk Technician**
+	- **Network Support Technician**
+	- **Infrastructure Technician / NOC Technician**
+	- **Cloud Support Associate / Cloud Ops Technician**
+- **Companies**:
+	- **MSP (Managed Service Providers)**
+	- **Mid-size companies (100–500 employees)**
+	- **Government / Edu sector**
+	- **Hosting providers / datacenters**
+	- **Tech startups**
+- **Platforms**:
+	- **LinkedIn Jobs** - the default hunting ground. recruiters live here.
+	- **Indeed** - massive listings, but you have to filter hard.
+	- **Glassdoor**: - useful for checking salary ranges and company culture before applying. not great for finding _new_ roles, but excellent for filtering bad employers.
+	- **ZipRecruiter**: - strong for smaller companies and MSPs. it syndicates listings from other boards too, so you’ll see overlap but catch a few extra gems.
+	- **Dice** - geared toward tech pros. solid for sysadmin, NOC, and DevOps-adjacent jobs. has recruiter outreach features that work surprisingly well.
+	- **AngelList (now Wellfound)** - for startup environments — if you want to learn fast and touch multiple systems. startups often skip degree/cert requirements if you can _show_ skill.
+	- **Reddit**: r/sysadminjobs, r/techjobs
+	- **Discord / Slack groups**: sysadmin communities often share private listings.
+	- **Company career pages**: smaller orgs post directly, especially local ISPs, MSPs, universities, or government IT departments.
+	- **[Microsoft Learn Career Connected](https://learn.microsoft.com/en-us/users/careerconnected)** - lets you match your Microsoft cert progress to open job listings
+- **Keywords**:
+	- "System Adminstrator"
+	- "IT Support"
+	- "IT Technician"
+	- "Network Support"
+	- "Infrastructure"
+	- "Hybrid/Remote"
+- **Skills**:
+	- “Windows Server”
+	- “Active Directory”
+	- “Linux Adminstration”
+	- “PowerShell / Bash scripting”
+	- “VMware / Hyper-V”
+	- “Network+ / CompTIA / Azure”
 
 ---
 
-## **Stage 2: Mid-Term Goal – Red Team Basics**
+## **Stage 2: [Bounty Hunting]**
 - _Books_:
 	- _“The Web Application Hacker's Handbook” by Dafydd Stuttard and Marcus Pinto_
     - _“Penetration Testing: A Hands-On Introduction to Hacking” by Georgia Weidman_
