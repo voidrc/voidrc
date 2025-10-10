@@ -1,56 +1,96 @@
-## **Stage 1: Short-Term Goal – Secure a SysAdmin Job**
 
-### **1. Core Skills for SysAdmins**
+# 🧭 **[Main Goal / Project Title]**
+
+_A short description or mission statement for this phase._
+
+---
+
+## **Stage 1: [Secure a SysAdmin Job]**
+
+### **Focus Areas**
+
+#### **[Linux Administration]**
+- **Reference**
+  - [What is Linux Adminstration](https://www.geeksforgeeks.org/linux-unix/what-is-linux-system-administration/)
+- **Books**
+  - *The Linux Command Line* — William Shotts
+  - *How Linux Works* — Brian Ward
+- **Free Resources**
+  - [Linux Journey](https://linuxjourney.com)
+  - [OverTheWire](https://overthewire.org/wargames/bandit)
+- **Scripting**
+  - [Bash](Scripting.md#Bash) 
+- **Notes**
+  - [Linux](../Linux/)
+#### **[Skill / Topic 2]**
+- (same structure)
+
+---
+
+### **Certifications**
+- **[Certification Name]**
+  - Purpose or focus area
+  - [Official Link](https://example.com)
+
+---
+
+### **Projects / Practice**
+- **Lab Setup**
+  - Virtualization tools, OS, configurations
+- **Tasks**
+  - Brief list of practice tasks or goals
+
+---
+
+### **Portfolio / Resume**
+- Key highlights, what to document or show publicly
+
+---
+
+### **Job / Application Plan**
+- Target roles or companies
+- Platforms to apply
+- Keywords or skills to emphasize
+
+---
+## **Stage 1: Short-Term Goal – **
 
 #### **Linux Administration (High Priority)**
-- **User and Group Management**: Learn to add, remove, and manage users and groups.
-  - Commands: `useradd`, `usermod`, `passwd`, `groupadd`, `groups`.
-- **File and Permission Management**:
-  - Use `chmod`, `chown`, and `setfacl` for permissions.
-  - Understand special permissions: `setuid`, `setgid`, and sticky bit.
-- **Networking**:
-  - Basics: `ip`, `nmcli`, `ifconfig`, `netstat`, `ss`.
-  - Firewall tools: `iptables`, `firewalld`.
-- **System Monitoring**:
-  - Commands: `top`, `htop`, `iotop`, `vmstat`, `free`.
-  - Logs: `journalctl`, `/var/log/`.
-- **Automation with Bash**:
-  - Write basic scripts to automate repetitive tasks.
-  - Example: Automate backups or log analysis.
+- _Free Resources_:
+
+- _Scripting_:
+	- [Bash](Scripting.md#Bash)
 
 #### **Windows Administration (Important for Mixed Environments)**
-- **Active Directory (AD)**:
-  - Learn user and group management in AD.
-  - Manage Group Policies (GPOs).
-- **PowerShell Scripting**:
-  - Automate Windows tasks using PowerShell.
-  - Example: Write scripts for user creation or log parsing.
-- **Windows Server Management**:
-  - Set up and manage roles like DNS, DHCP, and File Server.
+- _Books_:
+    - _“Windows Server 2019 Administration Fundamentals” by Bekim Dauti_
+- _Free Resources_:
+    - Microsoft Learn: [https://learn.microsoft.com](https://learn.microsoft.com/)
+- _Scripting_:
+	- [PowerShell](Scripting.md#PowerShell)
 
 #### **Networking Basics**
-- Understand key protocols: TCP/IP, DNS, DHCP, ARP.
-- Practice with tools like `ping`, `traceroute`, and `tcpdump`.
-- Learn basic router and switch configurations.
+- _Books_:
+    - _“Computer Networking: A Top-Down Approach” by Kurose and Ross_
+    - _“The TCP/IP Guide” by Charles Kozierok_
+- _Free Resources_:
+    - Cisco Packet Tracer: [https://www.netacad.com/courses/packet-tracer](https://www.netacad.com/courses/packet-tracer)
+    - Networking tutorials: [https://networklessons.com](https://networklessons.com/)
 
 #### **Backup and Recovery**
 - Tools: `rsync`, `tar`, and commercial tools like Veeam.
 - Understand disaster recovery planning and testing.
 
----
-
-### **2. Certifications (Quick Wins)**
+### **Certifications (Quick Wins)**
 
 - **CompTIA Linux+** (or LPIC-1): Proves your Linux administration skills.
 - **CompTIA Network+**: Validates foundational networking knowledge.
 - **Microsoft Certified: Azure Administrator Associate** (optional for Windows-heavy roles).
 
----
-
-### **3. Job Preparation**
+### **Job Preparation**
 
 #### **Build a Home Lab**
-- Use virtualization tools like VirtualBox, GNOME Boxes, or Proxmox.
+- Use virtualization tools like VirtualBox, or Proxmox.
 - Set up:
   - A Linux server (e.g., Ubuntu Server, CentOS, or Arch Linux).
   - A Windows server with Active Directory.
@@ -65,32 +105,24 @@
 - Target entry-level SysAdmin or IT support roles with SysAdmin tasks.
 - Use platforms like LinkedIn, Indeed, and company career pages.
 
----
-
-## **Stage 2: Mid-Term Goal – Red Team Basics (Parallel Focus)**
-
-### **1. Build a Strong Foundation in Offensive Security**
-
-#### **Scripting and Programming**
-- [Scripting Road-Map](00)%20Scripting.md)
-
-#### **Networking (Advanced)**
-- Learn subnetting, VLANs, and network segmentation.
-- Analyze network traffic with tools like Wireshark.
-- Understand protocols like SSH, FTP, SNMP, and HTTP.
-
-#### **Basic Security Tools**
-- **Kali Linux**: Familiarize yourself with its tools.
-- **Nmap**: Practice scanning and service enumeration.
-- **Metasploit**: Use it for basic exploitation.
-- **Burp Suite**: Learn web application testing basics.
-- **Wireshark**: Capture and analyze packets.
-
-#### **Learn Penetration Testing Methodologies**
-- Follow OSSTMM, PTES, or MITRE ATT&CK frameworks.
-- Practice on platforms like TryHackMe, Hack The Box, or CTF challenges.
 
 ---
+
+## **Stage 2: Mid-Term Goal – Red Team Basics**
+- _Books_:
+	- _“The Web Application Hacker's Handbook” by Dafydd Stuttard and Marcus Pinto_
+    - _“Penetration Testing: A Hands-On Introduction to Hacking” by Georgia Weidman_
+- _Free Resources_:
+    - [TryHackMe](https://tryhackme.com/)
+    - [Hack The Box](https://hackthebox.com/)
+- _Scripting_:
+	- [Python](Scripting.md#Python)
+	- [JavaScript](Scripting.md#JavaScript)
+	- [SQL](Scripting.md#SQL)
+- _FrameWorks_:
+    - [OSSTMM](https://www.pentesting.org/methodology-understanding-guide/)
+    - [PTES](https://www.pentesting.org/technical-testing-guide/)
+    - [MITRE ATT&CK](https://attack.mitre.org/resources/)
 
 ### **2. Certifications (Intermediate Focus)**
 - **CompTIA Security+**: Foundational security certification.
@@ -103,8 +135,15 @@
 ### **1. Advanced Skills**
 
 #### **Exploit Development**
-- Learn Assembly and reverse engineering.
-- Tools: GDB, Immunity Debugger, IDA Pro, Ghidra.
+- **Programming**:
+	- [C/C++](Scripting.md#C/C++)
+	- [Ruby](Scripting.md#Ruby)
+	- [Assembly](Scripting.md#Assembly)
+- **Tools**: 
+	- GDB
+	- Immunity Debugger
+	- IDA Pro
+	- Ghidra.
 
 #### **Privilege Escalation**
 - Master privilege escalation techniques on Linux and Windows.
@@ -112,7 +151,10 @@
 
 #### **Post-Exploitation**
 - Learn persistence techniques, lateral movement, and data exfiltration.
-- Tools: Cobalt Strike, Empire, BloodHound.
+- **Tools**: 
+	- Cobalt Strike
+	- Empire
+	- BloodHound.
 
 #### **Command and Control (C2)**
 - Set up and operate C2 infrastructures.
@@ -120,7 +162,11 @@
 
 #### **Malware Analysis**
 - Learn to analyze malware behavior in a safe lab environment.
-- Tools: Cuckoo Sandbox, OllyDbg.
+- **Scripting**: 
+	- [GO](Scripting.md#Go)
+- **Tools**: 
+	- Cuckoo Sandbox
+	- OllyDbg.
 
 ---
 
@@ -138,7 +184,3 @@
   - Automation scripts.
   - Attack simulations.
   - Write-ups of CTF challenges.
-
----
-
-[some usefull resources](00)%20Resources/resources.md) 
