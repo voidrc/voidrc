@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/03. History.md",
+                "file": "Linux/04. Root.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03. History"
+              "title": "04. Root"
             }
           }
         ]
@@ -171,8 +171,9 @@
   },
   "active": "a9c669f65ac6b726",
   "lastOpenFiles": [
-    "Linux/BackUp_Options.md",
     "Linux/03. History.md",
+    "Linux/04. Root.md",
+    "Linux/BackUp_Options.md",
     "Linux/partitioning.md",
     "Linux/02. CLI.md",
     "Linux/01. Installing Distro.md",
@@ -215,7 +216,6 @@
     "templates/Templates/5_Structure Template.md",
     "templates/Templates/5_OKR Template.md",
     "templates/Templates/5_Meeting Notes Template.md",
-    "templates/Templates/5_BuJo - Weekly Log.md",
     "templates/Assets/make_useful_notes_v0-18-0_2023-07-24.pdf",
     "templates/Assets/Zettelkasten_System_Definition_D1_2025-04-03.pdf",
     "templates/Assets/Zettelkasten_LitMap_2024-08-04.pdf",
