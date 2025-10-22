@@ -11,17 +11,14 @@
             "id": "a9c669f65ac6b726",
             "type": "leaf",
             "state": {
-              "type": "canvas",
+              "type": "markdown",
               "state": {
-                "file": "Untitled.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0
-                }
+                "file": "Linux/03. History.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-layout-dashboard",
-              "title": "Untitled"
+              "icon": "lucide-file",
+              "title": "03. History"
             }
           }
         ]
@@ -174,12 +171,21 @@
   },
   "active": "a9c669f65ac6b726",
   "lastOpenFiles": [
-    "Untitled.canvas",
-    "Resources/Root2Red.md",
+    "Linux/BackUp_Options.md",
+    "Linux/03. History.md",
+    "Linux/partitioning.md",
+    "Linux/02. CLI.md",
     "Linux/01. Installing Distro.md",
     "Ethical Hacking/01. Work Space.md",
-    "Labs/VirtualBox/01. Installation.md",
     "README.md",
+    "CICD/image",
+    "Untitled.md",
+    "CICD/Untitled.md",
+    "CICD",
+    "Labs/MineCraft.md",
+    "Untitled.canvas",
+    "Resources/Root2Red.md",
+    "Labs/VirtualBox/01. Installation.md",
     "Labs/VirtualBox/02. VM creation.md",
     "LICENSE.md",
     "templates/5_Structure/Canvases/How to Use Links with Templates.canvas",
@@ -210,12 +216,6 @@
     "templates/Templates/5_OKR Template.md",
     "templates/Templates/5_Meeting Notes Template.md",
     "templates/Templates/5_BuJo - Weekly Log.md",
-    "templates/Templates/5_BuJo - Monthly Log.md",
-    "templates/Templates/5_BuJo - Future Log.md",
-    "templates/Templates/5_BuJo - Daily Log.md",
-    "templates/Templates/4_Post Template.md",
-    "templates/Templates/4_E-book Template.md",
-    "templates/Templates/4_E-book Back Matter Snippet.md",
     "templates/Assets/make_useful_notes_v0-18-0_2023-07-24.pdf",
     "templates/Assets/Zettelkasten_System_Definition_D1_2025-04-03.pdf",
     "templates/Assets/Zettelkasten_LitMap_2024-08-04.pdf",
@@ -223,8 +223,6 @@
     "templates/Assets/The_Extended_Mind_2024-08-11.pdf",
     "templates/5_Structure/Canvases",
     "templates/4_Project/Posts Zettelkasten",
-    "templates/4_Project/Obsidian Starter Kit",
-    "templates/Visuals",
-    "templates/Templates"
+    "templates/4_Project/Obsidian Starter Kit"
   ]
 }
