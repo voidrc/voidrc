@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "TUI/FolderDiff.md",
+                "file": "Linux/05. File System.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "FolderDiff"
+              "title": "05. File System"
             }
           }
         ]
@@ -169,16 +169,17 @@
       "bases:Create new base": false
     }
   },
-  "active": "5433c0565572f945",
+  "active": "2abe772c7476fdb2",
   "lastOpenFiles": [
-    "TUI",
-    "TUI/FolderDiff.md",
-    "TUI/MetaData.md",
+    "Linux/02. CLI.md",
+    "To-Sort/WiFi Cracking.md",
     "Linux/05. File System.md",
+    "TUI/FolderDiff.md",
+    "TUI",
+    "TUI/MetaData.md",
     "Linux/04. Root.md",
     "Linux/Untitled",
     "Linux/03. History.md",
-    "Linux/02. CLI.md",
     "Linux/BackUp_Options.md",
     "Linux/partitioning.md",
     "Linux/01. Installing Distro.md",
@@ -222,7 +223,6 @@
     "templates/Assets/Zettelkasten_LitMap_2024-08-04.pdf",
     "templates/Assets/Zettelkasten_Class_Diagram_2025-04-26.pdf",
     "templates/Assets/The_Extended_Mind_2024-08-11.pdf",
-    "templates/5_Structure/Canvases",
-    "templates/4_Project/Posts Zettelkasten"
+    "templates/5_Structure/Canvases"
   ]
 }
