@@ -5,7 +5,7 @@ sudo mkfs.btrfs -f /dev/sdX
 
 - Mount the 1TB SSD:
 ```bash
-sudo mkdir /media/$USER
+sudo mkdir -p /media/$USER
 sudo chown $USER:$USER /media/$USER
 sudo mount /dev/sdX /media/$USER
 ```
