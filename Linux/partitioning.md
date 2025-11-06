@@ -1,42 +1,50 @@
-## Step 1: Mount the 1TB SSD
-
 - Prepare the 1TB SSD: You’ll need to format it with a filesystem like BTRFS.
-
 ```bash
 sudo mkfs.btrfs -f /dev/sdX
 ```
 
 - Mount the 1TB SSD:
-
 ```bash
-sudo mkdir /mnt/home
-sudo mount /dev/sdX /mnt/home
+sudo mkdir /media/$USER
+sudo chown $USER:$USER /media/$USER
+sudo mount /dev/sdX /media/$USER
 ```
 
-## Step 2: Move Data from /home (512GB SSD) to /mnt/home (1TB SSD)
-
-- Move the data: You can use rsync to move the data from the old /home to the new SSD. This ensures permissions and data are properly copied.
-
+- Create folders
 ```bash
-sudo rsync -avh --progress /home/ /mnt/home/
+mkdir /media/$USER/Courses/ 
+mkdir /media/$USER/Documents/ 
+mkdir /media/$USER/Git/ 
+mkdir /media/$USER/Music/ 
+mkdir /media/$USER/Pictures/ 
+mkdir /media/$USER/Videos/
 ```
 
-This command will recursively copy everything from /home on the 512GB SSD to /mnt/home.
-
-- Check that the data has been copied:
-
+- Move the data
 ```bash
-ls /mnt/home
+sudo rsync -avh --progress ~/Courses/ /media/$USER/Courses/
+sudo rsync -avh --progress ~/Documents/ /media/$USER/Documents/
+sudo rsync -avh --progress ~/Git/ /media/$USER/Git/
+sudo rsync -avh --progress ~/Music/ /media/$USER/Music/
+sudo rsync -avh --progress ~/Pictures/ /media/$USER/Pictures/
+sudo rsync -avh --progress ~/Videos/ /media/$USER/Videos/
+```
+> Check that the data has been copied:
+
+- Link
+```bash
+ln -s /media/$USER/Courses ~/Courses
+ln -s /media/$USER/Documents ~/Documents
+ln -s /media/$USER/Git ~/Git
+ln -s /media/$USER/Music ~/Music
+ln -s /media/$USER/Pictures ~/Pictures
+ln -s /media/$USER/Videos ~/Videos
 ```
 
-## Step 3: Update the Mount Point for /home
-
+- Modify `/etc/fstab`
 ```bash
 sudo vim /etc/fstab
-```
 
-   Add or modify the line for /home to:
-
-```bash
-UUID=<UUID of 1TB SSD>  /home  btrfs  defaults  0  0
+UUID=<UUID of storage>  /media/<youruser>  btrfs  deafults,noatime 0 2
 ```
+> Add snapper rule just in-case
