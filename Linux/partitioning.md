@@ -45,6 +45,6 @@ ln -s /media/$USER/Videos ~/Videos
 ```bash
 sudo vim /etc/fstab
 
-UUID=<UUID of storage>  /media/<youruser>  btrfs  deafults,noatime 0 2
+UUID=<UUID of storage>  /media/<youruser>  btrfs  deafults,noatime,compress=zstd 0 2
 ```
 > Add snapper rule just in-case
