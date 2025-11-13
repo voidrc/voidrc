@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/06. File Manipulation.md",
+                "file": "Scripting/IDE.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06. File Manipulation"
+              "title": "IDE"
             }
           }
         ]
@@ -169,10 +169,11 @@
       "bases:Create new base": false
     }
   },
-  "active": "5433c0565572f945",
+  "active": "2abe772c7476fdb2",
   "lastOpenFiles": [
-    "Linux/05. File System.md",
     "Linux/06. File Manipulation.md",
+    "Scripting/IDE.md",
+    "Linux/05. File System.md",
     "Linux/partitioning.md",
     "Linux/BackUp_Options.md",
     "Labs/Monster.md",
@@ -207,7 +208,6 @@
     "templates/4_Project/Posts Zettelkasten/Post - Luhmann vs Digital Zettelkasten.md",
     "templates/4_Project/Obsidian Starter Kit/_MOC - Obsidian Starter Kit.md",
     "templates/4_Project/Obsidian Starter Kit/Project Log - Obsidian Starter Kit.md",
-    "templates/4_Project/Obsidian Starter Kit/History - Obsidian Starter Kit.md",
     "templates/Visuals/zettelkasten_maturity_2024-11-18.png",
     "templates/Visuals/luhmann_vs_digital_2025-03-06.png",
     "templates/Visuals/banner_books.jpg",
