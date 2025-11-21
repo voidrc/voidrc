@@ -1,27 +1,28 @@
-1. **Penetration Testing**:    
-
+1. **Penetration Testing**:
 
 ---
 
 ### **Advanced Red Teaming**
 
-1. **Exploit Development**:    
-    - _Books_:
-        - _“The Shellcoder’s Handbook” by Koziol et al._
-        - _“Hacking: The Art of Exploitation” by Jon Erickson_
-    - _Free Resources_:
-        - Exploit Development Lab: [https://exploit.education](https://exploit.education/)
+1. **Exploit Development**:
 
-2. **Reverse Engineering**:    
-    - _Books_:
-        - _“Practical Reverse Engineering” by Dang et al._
-    - _Free Resources_:
-        - Malware analysis: [https://malwareunicorn.org](https://malwareunicorn.org/)
-        - Ghidra tutorials: [https://ghidra-sre.org](https://ghidra-sre.org/)
+   - _Books_:
+     - _“The Shellcoder’s Handbook” by Koziol et al._
+     - _“Hacking: The Art of Exploitation” by Jon Erickson_
+   - _Free Resources_:
+     - Exploit Development Lab: [https://exploit.education](https://exploit.education/)
+
+2. **Reverse Engineering**:
+   - _Books_:
+     - _“Practical Reverse Engineering” by Dang et al._
+   - _Free Resources_:
+     - Malware analysis: [https://malwareunicorn.org](https://malwareunicorn.org/)
+     - Ghidra tutorials: [https://ghidra-sre.org](https://ghidra-sre.org/)
 
 ---
 
 Playgrounds:
+
 1. Root Me — Challenges.
 2. Stök's YouTube — Videos.
 3. Hacker101 Videos — Videos.

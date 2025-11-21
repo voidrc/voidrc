@@ -1,65 +1,68 @@
 Nmap(Network Mapper) is an open-source and versatile network scanning tool widely used in cybersecurity and IT fields. It helps security professionals, network administrators, and penetration testers to map out networks, discover active hosts, and identify open ports and services.
 
 ## Key Features of NMAP
+
 Nmap is a powerful tool with a variety of features designed for network discovery, analysis, and security assessment. Here are its key features:
-1) Network Discovery
-	- Identifies active hosts within a network
-	- Supports scanning individual ports
-2) Port Scanning
-	- Scans for open, closed, or filtered ports on target systems
-	- Supports scanning individual ports, specific port ranges, or all 65535 ports
-3) Service Version Detection
-	- Determines the  type and version of services running on open ports
-	- Helps identify vulnerabilities associated with outdated services
-4) Operating System Detection
-	- Detects the operating system of target devices, including version details and hardware information
-	- Useful for profiling target systems during penetration testing
-5) Scripting Engine(NSA)
-	- Executes Custom or built-in scripts to perform advanced tasks such as:
-		- Vulnerability Detection
-		- Malware Identification
-		- Service Enumeration
-		- Network Policy Compliance Checks
-	- Includes pre-built scripts for specific use cases, such as identifying CVEs or SQL injection
-6) Aggressive Scanning
-	- Combines service version detection, OS detection, and traceroute in a single scan to gather comprehensive data about target
-7) Output Customization
-	- Generates reports in multiple formats:
-		- Normal (-oN), XML (-oX), and grepable (-oG) formats
-		- Supports saving outputs for later analysis or integration with other tools
-8) Flexible Scanning Techniques
-	- Offers a variety of scan modes to suit different needs:
-		- SYN Scan (-sS): Stealthy and Efficient
-		- TCP Connect Scan (-sT): Establishes a full TCP connection
-		- UDP Scan (-sU): Explores open UDP Ports
-		- Ping Scan (-sP): Detects live hosts without performing port scans
-9) IPv6 Support
-	- Fully supports IPv6 scanning to accommodate modern network configurations
-10) Speed and Timing Control
-	- Adjustable scanning speed to balance efficiency and stealth
-		- -T4 for fast scans
-		- -T0 for highly stealthy scans
-11) Traceroute
-	- Maps the path packets take to reach the target
-	- Identifies intermediate devices and  networks in the route
-12) Vulnerability Assessment
-	- Leverage NSE scriptts to detect sppecific vulnerablities and misconfigurations, such as:
-		- SQL injection
-		- Weak SSL/TLS
-		- Open SMB shares
-13) Advanced Packet Manipulation
-	- Customizes packet data, length, and checksum to evade detection or tailor scans for specific targets
-14) Security and Privacy Testing
-	- Detect web application vulnerabilities, HTTP headers, and SSL certificate issues
-	- Performs brute-forcing and checks for anonymous login possibilities in FTP or SMB protocols
+
+1. Network Discovery
+   - Identifies active hosts within a network
+   - Supports scanning individual ports
+2. Port Scanning
+   - Scans for open, closed, or filtered ports on target systems
+   - Supports scanning individual ports, specific port ranges, or all 65535 ports
+3. Service Version Detection
+   - Determines the type and version of services running on open ports
+   - Helps identify vulnerabilities associated with outdated services
+4. Operating System Detection
+   - Detects the operating system of target devices, including version details and hardware information
+   - Useful for profiling target systems during penetration testing
+5. Scripting Engine(NSA)
+   - Executes Custom or built-in scripts to perform advanced tasks such as:
+     - Vulnerability Detection
+     - Malware Identification
+     - Service Enumeration
+     - Network Policy Compliance Checks
+   - Includes pre-built scripts for specific use cases, such as identifying CVEs or SQL injection
+6. Aggressive Scanning
+   - Combines service version detection, OS detection, and traceroute in a single scan to gather comprehensive data about target
+7. Output Customization
+   - Generates reports in multiple formats:
+     - Normal (-oN), XML (-oX), and grepable (-oG) formats
+     - Supports saving outputs for later analysis or integration with other tools
+8. Flexible Scanning Techniques
+   - Offers a variety of scan modes to suit different needs:
+     - SYN Scan (-sS): Stealthy and Efficient
+     - TCP Connect Scan (-sT): Establishes a full TCP connection
+     - UDP Scan (-sU): Explores open UDP Ports
+     - Ping Scan (-sP): Detects live hosts without performing port scans
+9. IPv6 Support
+   - Fully supports IPv6 scanning to accommodate modern network configurations
+10. Speed and Timing Control
+    - Adjustable scanning speed to balance efficiency and stealth
+      - -T4 for fast scans
+      - -T0 for highly stealthy scans
+11. Traceroute
+    - Maps the path packets take to reach the target
+    - Identifies intermediate devices and networks in the route
+12. Vulnerability Assessment
+    - Leverage NSE scriptts to detect sppecific vulnerablities and misconfigurations, such as:
+      - SQL injection
+      - Weak SSL/TLS
+      - Open SMB shares
+13. Advanced Packet Manipulation
+    - Customizes packet data, length, and checksum to evade detection or tailor scans for specific targets
+14. Security and Privacy Testing
+    - Detect web application vulnerabilities, HTTP headers, and SSL certificate issues
+    - Performs brute-forcing and checks for anonymous login possibilities in FTP or SMB protocols
 
 ## Command Categories
+
 - **Basic Scans**: Commands for scanning single targets, multiple targets, ranges or subnets.
 - **Port Scans**: Includes specific port scans, all-port scans, and common-port scans
 - **Service and OS Detection**: Commands for identifying services versions and operationg systems
-- **Advanced Scans**: Techniques like TCP connect, SYN, and UDP scans, as  well as aggressive scanning
+- **Advanced Scans**: Techniques like TCP connect, SYN, and UDP scans, as well as aggressive scanning
 - **Output Options**: Saving results in various formats (normal, XML, grepable, all formats)
-- **Script Usage**: Leveraging Nmap scripts for vulnerability detection,  HTTP enumeration, and more
+- **Script Usage**: Leveraging Nmap scripts for vulnerability detection, HTTP enumeration, and more
 - **Vulnerability Scanning**: Scripts targeting specific CVEs and weaknesses like SQL injection, XSS, and SSL/TLS issues
 - **Miscellaneous Options**: Includes traceroute, adjusting scan speeds, and customized packet settings
 
@@ -104,7 +107,7 @@ Nmap is a powerful tool with a variety of features designed for network discover
 | nmap --data-length {length}           | Adjust packet data length for probes                         |
 | nmap --ttl {value}                    | Set TTL (Time-To-Live) value for packets                     |
 | nmap -D {decoys} {target}             | Use decoys to hide the source of the scan                    |
-| nmap  --spoof-mac {MAC address}       | Spoof the MAC address of the scanning machine                |
+| nmap --spoof-mac {MAC address}        | Spoof the MAC address of the scanning machine                |
 | nmap --exclude {target}               | Exclude specific targets from the scan                       |
 | nmap --exclude-file {file}            | Exclude targets listed in a file                             |
 | nmap --reason                         | Show reason for host or port state changes                   |
@@ -124,7 +127,7 @@ Nmap is a powerful tool with a variety of features designed for network discover
 | nmap --script {script}                | Run a specific script                                        |
 | nmap -sC {target}                     | Run default category scripts                                 |
 | nmap --script-timeout {time}          | Set time out for scripts                                     |
-| nmap --script=http-* {target}         | Run HTTP-related scripts                                     |
+| nmap --script=http-\* {target}        | Run HTTP-related scripts                                     |
 | nmap --script=ftp-anon {target}       | Check for anonymous FTP login                                |
 | nmap --script=dns-cache-snoop         | Check DNS cache snooping vulnerabilities                     |
 | nmap --script=http-stored-xss         | Check for stored XSS vulnerabilties                          |
@@ -145,14 +148,14 @@ Nmap is a powerful tool with a variety of features designed for network discover
 | nmap --script=smb-enum-users          | Enumerate users on SMB systems                               |
 | nmap --script=imap-capabilities       | Check capabilities of an IMAP server                         |
 | nmap --script=pop3-capabilities       | Check capabilities of a POP3 server                          |
-| nmap --script=http-auth               | Test HTTP authentication  methods                            |
+| nmap --script=http-auth               | Test HTTP authentication methods                             |
 | nmap --script=ssl-heartbleed          | Test for Heartbleed vulnerabilities in SSL/TLS               |
 | nmap --script=ftp-bounce              | Check for FTP bounce vulnerability                           |
 | nmap --script=ldap-rootdse            | Query LDAP RootDSE information                               |
 | nmap --script=rdp-vuln-ms12-020       | Test for MS12-020 vulnerability in RDP                       |
 | nmap --script=ntp-monlist             | Retrieve the list of recent connection from a NTP server     |
 | nmap --script=snmp-brute              | Perform brute-force attacks on SNMP                          |
-| nmap --script=ip-geolocation-*        | Retrieve geolocation data for scanned IP addresses           |
+| nmap --script=ip-geolocation-\*       | Retrieve geolocation data for scanned IP addresses           |
 | nmap --script=dns-recursion           | Test if a DNS server allows recursion                        |
 | nmap --script=dns-zone-transfer       | Test for DNS zone transfer vulnerabilities                   |
 | nmap --script=dns-service-discovery   | Discover services running on DNS                             |

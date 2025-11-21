@@ -37,7 +37,7 @@ git diff --no-index dir1 dir2 | diff-so-fancy
 
 #### **2. delta (modern + sexy)**
 
-`delta` prettifies diffs *and* works recursively via `git diff --no-index`.
+`delta` prettifies diffs _and_ works recursively via `git diff --no-index`.
 
 ```bash
 git diff --no-index dir1 dir2 | delta --side-by-side
@@ -50,7 +50,7 @@ Add `--navigate` to move between changes with arrow keys.
 
 #### **3. difftastic (AST-based, code aware)**
 
-This one’s smart — it parses code structurally. So if you move a function or change indentation, it highlights *logical* differences, not just textual ones.
+This one’s smart — it parses code structurally. So if you move a function or change indentation, it highlights _logical_ differences, not just textual ones.
 
 ```bash
 difft dir1 dir2
@@ -71,7 +71,7 @@ difftastic --context 5 dir1 dir2
 
 #### **1. diffoscope**
 
-A monster diff tool designed for comparing *everything*, from binaries to folders to ISOs.
+A monster diff tool designed for comparing _everything_, from binaries to folders to ISOs.
 
 ```bash
 diffoscope dir1 dir2
@@ -88,7 +88,7 @@ A neat hack: `rsync` can tell you which files would be changed if syncing two di
 rsync -rvn --delete dir1/ dir2/
 ```
 
-**Pros:** perfect for finding *which files differ* before doing actual diffs.
+**Pros:** perfect for finding _which files differ_ before doing actual diffs.
 **Cons:** doesn’t show line-level changes.
 
 ---
@@ -135,10 +135,11 @@ Here’s the combo I’d wire in:
    ```bash
    delta --side-by-side fileA fileB
    ```
+
 3. Display the summary tree in your Textual interface, with keybindings:
 
-   * Enter → open detailed diff
-   * Space → mark file for sync or merge
-   * M → launch editor to resolve conflict
+   - Enter → open detailed diff
+   - Space → mark file for sync or merge
+   - M → launch editor to resolve conflict
 
 You’ll end up with a **TUI Meld** that’s fast, curses-based, and extensible.

@@ -1,11 +1,11 @@
 # Quick summary
 
-* Single best Swiss-army CLI: **ExifTool** (images, PDF, Office, many audio/video container tags).
-* Media container-level editor: **ffmpeg** (MP4/MKV/MP3/AAC tags) + **AtomicParsley** (mp4).
-* Audio-tag focused: **kid3**, **easytag**, **puddletag**, **musicbrainz-picard**, **mutagen** (Python lib).
-* Text/script metadata: use **extended attributes** (`setfattr`/`getfattr`), standardized **frontmatter** (YAML) for Markdown, and **git** metadata for provenance.
-* PDF-specific: **exiftool**, **pdfinfo**/**pdftk**/**qpdf** for container and structural info; GUI: **Okular**/**qpdfview**/**pdfarranger**.
-* TUI stack suggestion: **Textual** (modern, rich) or **urwid/prompt_toolkit**; use subprocess wrappers to call exiftool/ffmpeg/mutagen.
+- Single best Swiss-army CLI: **ExifTool** (images, PDF, Office, many audio/video container tags).
+- Media container-level editor: **ffmpeg** (MP4/MKV/MP3/AAC tags) + **AtomicParsley** (mp4).
+- Audio-tag focused: **kid3**, **easytag**, **puddletag**, **musicbrainz-picard**, **mutagen** (Python lib).
+- Text/script metadata: use **extended attributes** (`setfattr`/`getfattr`), standardized **frontmatter** (YAML) for Markdown, and **git** metadata for provenance.
+- PDF-specific: **exiftool**, **pdfinfo**/**pdftk**/**qpdf** for container and structural info; GUI: **Okular**/**qpdfview**/**pdfarranger**.
+- TUI stack suggestion: **Textual** (modern, rich) or **urwid/prompt_toolkit**; use subprocess wrappers to call exiftool/ffmpeg/mutagen.
 
 ---
 
@@ -97,14 +97,14 @@ exiftool -overwrite_original -Title="Doc Title" -Author="Your Name" file.pdf
 
 ### Rewriting streams / repair:
 
-* `qpdf` and `pdftk` can do some manipulations; exiftool writes metadata fields.
+- `qpdf` and `pdftk` can do some manipulations; exiftool writes metadata fields.
 
 ## 4) Scripts (Python, Bash, C/C++), Markdown, plain text
 
 Scripts and plaintext don’t have embedded standardized metadata except comments and filesystem xattrs. Two robust options:
 
-* **YAML frontmatter** (for Markdown — and you can adopt same concept for scripts in header comments).
-* **Extended attributes** (xattr) — preserved by many tools and portable on Linux.
+- **YAML frontmatter** (for Markdown — and you can adopt same concept for scripts in header comments).
+- **Extended attributes** (xattr) — preserved by many tools and portable on Linux.
 
 ### Add xattr:
 
@@ -154,12 +154,12 @@ exiftool -r -ext mp3 -Artist="Art" -o . /path/to/dir  # careful; test first
 
 # GUI tools you might like
 
-* **Kid3** — powerful cross-platform tag editor (audio).
-* **EasyTAG** — GTK audio tag editor.
-* **Puddletag** — Qt, spreadsheet-like tag editing.
-* **MusicBrainz Picard** — automatic metadata lookup for audio.
-* **Okular**, **qpdfview**, **pdfarranger** — for PDF viewing & light metadata tasks.
-* **Nemo/Nautilus** with scripts — you can add right-click actions that call your CLI.
+- **Kid3** — powerful cross-platform tag editor (audio).
+- **EasyTAG** — GTK audio tag editor.
+- **Puddletag** — Qt, spreadsheet-like tag editing.
+- **MusicBrainz Picard** — automatic metadata lookup for audio.
+- **Okular**, **qpdfview**, **pdfarranger** — for PDF viewing & light metadata tasks.
+- **Nemo/Nautilus** with scripts — you can add right-click actions that call your CLI.
 
 ---
 
@@ -169,42 +169,42 @@ You said you’ll create a TUI for every utility/command you use. Love that. Her
 
 ## Goals
 
-* Single TUI wrapper that: detects file type, shows current metadata, allows editing fields, batch operations, preview, dry-run, create backups, and keeps an undo log.
-* Plugin system per file-type: each plugin maps fields to specific tool(s) (exiftool, ffmpeg, mutagen, setfattr, etc.).
-* Transactional batch: create backups before writing, record changes in a local metadata DB (sqlite).
+- Single TUI wrapper that: detects file type, shows current metadata, allows editing fields, batch operations, preview, dry-run, create backups, and keeps an undo log.
+- Plugin system per file-type: each plugin maps fields to specific tool(s) (exiftool, ffmpeg, mutagen, setfattr, etc.).
+- Transactional batch: create backups before writing, record changes in a local metadata DB (sqlite).
 
 ## Recommended stack
 
-* UI: **Textual** (Textualize) — modern, supports layouts, tables, editable forms, async subprocess calls. Alternative: **urwid** or **prompt_toolkit**.
-* Subprocess / wrapper: Python’s `subprocess` + small adapter classes per tool.
-* Libraries: **mutagen** for audio, **python-xattr** for xattrs, call **exiftool**/**ffmpeg** via subprocess for everything else.
-* Database: **sqlite** for storing change history (who/when/what).
-* Packaging: Make the app scriptable so you can call `mdtool edit path --field Artist="..."` for automation.
+- UI: **Textual** (Textualize) — modern, supports layouts, tables, editable forms, async subprocess calls. Alternative: **urwid** or **prompt_toolkit**.
+- Subprocess / wrapper: Python’s `subprocess` + small adapter classes per tool.
+- Libraries: **mutagen** for audio, **python-xattr** for xattrs, call **exiftool**/**ffmpeg** via subprocess for everything else.
+- Database: **sqlite** for storing change history (who/when/what).
+- Packaging: Make the app scriptable so you can call `mdtool edit path --field Artist="..."` for automation.
 
 ## Plugin interface (pseudo)
 
 Each plugin implements:
 
-* `detect(path) -> bool`
-* `read(path) -> dict` (canonical field names)
-* `write(path, dict_of_fields, dry_run=False) -> result`
-* `gui_schema() -> fields to present`
+- `detect(path) -> bool`
+- `read(path) -> dict` (canonical field names)
+- `write(path, dict_of_fields, dry_run=False) -> result`
+- `gui_schema() -> fields to present`
 
 Example plugin mapping:
 
-* Audio plugin: uses mutagen for MP3/FLAC, fallback to exiftool
-* Video plugin: uses ffprobe/ffmpeg/exiftool
-* Script plugin: uses xattr + frontmatter parsing
+- Audio plugin: uses mutagen for MP3/FLAC, fallback to exiftool
+- Video plugin: uses ffprobe/ffmpeg/exiftool
+- Script plugin: uses xattr + frontmatter parsing
 
 ## UX features to prioritize
 
-* **Preview** before applying.
-* **Batch preview** showing diffs.
-* **Dry-run** flag.
-* **Auto-backup** (store original in `.meta-backups/` or create `.orig` files).
-* **Undo** via sqlite log + backup restore command.
-* **Search and templating** (apply patterns: set Artist from filename, or from YAML template).
-* **Integration hooks** for MusicBrainz or other lookup APIs (optional).
+- **Preview** before applying.
+- **Batch preview** showing diffs.
+- **Dry-run** flag.
+- **Auto-backup** (store original in `.meta-backups/` or create `.orig` files).
+- **Undo** via sqlite log + backup restore command.
+- **Search and templating** (apply patterns: set Artist from filename, or from YAML template).
+- **Integration hooks** for MusicBrainz or other lookup APIs (optional).
 
 ---
 
@@ -249,24 +249,25 @@ class MetaTUI(App):
 
 # Small utilities & tips you’ll want to include in TUI
 
-* `file` & `mimetype` detection.
-* `ffprobe` for detailed media streams.
-* automatic mapping: e.g., `Title` <-> MP4 `title` vs. ID3 `TIT2`.
-* templates for common tag sets (podcast/album/film/lecture).
-* integration with `ripgrep`/`fd` to find files quickly.
+- `file` & `mimetype` detection.
+- `ffprobe` for detailed media streams.
+- automatic mapping: e.g., `Title` <-> MP4 `title` vs. ID3 `TIT2`.
+- templates for common tag sets (podcast/album/film/lecture).
+- integration with `ripgrep`/`fd` to find files quickly.
 
 ---
 
 # Caveats, ethics & filesystem notes
 
-* Editing metadata can break digital signatures, notarized docs, or certified PDFs. Don’t edit signed files you don’t own.
-* Extended attributes may not survive copying to some filesystems (FAT32, some cloud storage tools).
-* Some forensic traces (MFT records, inode change times) are not removed by simple metadata edits.
-* Always keep backups and record an undo log.
+- Editing metadata can break digital signatures, notarized docs, or certified PDFs. Don’t edit signed files you don’t own.
+- Extended attributes may not survive copying to some filesystems (FAT32, some cloud storage tools).
+- Some forensic traces (MFT records, inode change times) are not removed by simple metadata edits.
+- Always keep backups and record an undo log.
 
 ---
 
 # Next practical steps
+
 1. Install `exiftool`, `ffmpeg`, `mutagen`, `textual`.
 2. Prototype a tiny plugin that: detects MP3, reads tags, edits a single field, and writes a backup.
 3. Expand to support ffmpeg-based container tags and xattr/frontmatter for scripts.

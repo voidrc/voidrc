@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Scripting/IDE.md",
+                "file": "Labs/VirtualBox/01. Installation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "IDE"
+              "title": "01. Installation"
             }
           }
         ]
@@ -171,8 +171,8 @@
   },
   "active": "2abe772c7476fdb2",
   "lastOpenFiles": [
-    "Linux/06. File Manipulation.md",
     "Scripting/IDE.md",
+    "Linux/06. File Manipulation.md",
     "Linux/05. File System.md",
     "Linux/partitioning.md",
     "Linux/BackUp_Options.md",

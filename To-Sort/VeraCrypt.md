@@ -17,8 +17,8 @@ First, identify the mount point of your external HDD.
 
 Examples:
 
-* `/run/media/$USER/ExternalHDD`
-* `/mnt/mydrive`
+- `/run/media/$USER/ExternalHDD`
+- `/mnt/mydrive`
 
 You can check with:
 
@@ -42,8 +42,8 @@ But replace with your actual mount point if different.
 
 Examples:
 
-* **Container filename**: `redteam_logs.hc`
-* **Size**: 2GB (adjust as you want)
+- **Container filename**: `redteam_logs.hc`
+- **Size**: 2GB (adjust as you want)
 
 ---
 
@@ -65,20 +65,20 @@ veracrypt &
 
 2️⃣ In the GUI:
 
-* Click **Create Volume**.
-* Choose **Create an encrypted file container** → **Next**.
-* Choose **Standard VeraCrypt volume** → **Next**.
-* **Select File** → navigate to your external HDD and enter:
+- Click **Create Volume**.
+- Choose **Create an encrypted file container** → **Next**.
+- Choose **Standard VeraCrypt volume** → **Next**.
+- **Select File** → navigate to your external HDD and enter:
 
 ```
 /run/media/$USER/ExternalHDD/redteam_logs.hc
 ```
 
-* Choose encryption (AES is fine) → **Next**.
-* Enter size (e.g. 2000 MB) → **Next**.
-* Set a strong password → **Next**.
-* Filesystem (usually **ext4** or **exFAT** if you need Windows compatibility).
-* Format.
+- Choose encryption (AES is fine) → **Next**.
+- Enter size (e.g. 2000 MB) → **Next**.
+- Set a strong password → **Next**.
+- Filesystem (usually **ext4** or **exFAT** if you need Windows compatibility).
+- Format.
 
 ✅ Done!
 
@@ -88,7 +88,7 @@ Your VeraCrypt container is now on your external HDD.
 
 ### ✅ 3B. Fully CLI Method (Advanced)
 
-If you prefer *all terminal*, VeraCrypt also supports **--text** mode:
+If you prefer _all terminal_, VeraCrypt also supports **--text** mode:
 
 Example:
 
@@ -98,12 +98,12 @@ veracrypt --text --create /run/media/$USER/ExternalHDD/redteam_logs.hc
 
 VeraCrypt will **prompt you interactively** for:
 
-* Volume type (default = 1 = standard)
-* Encryption algorithm (default AES)
-* Hash (default SHA-512)
-* Size (e.g. 2G)
-* Password
-* Filesystem (ext4, exFAT, etc.)
+- Volume type (default = 1 = standard)
+- Encryption algorithm (default AES)
+- Hash (default SHA-512)
+- Size (e.g. 2G)
+- Password
+- Filesystem (ext4, exFAT, etc.)
 
 Example interactive session:
 
@@ -122,15 +122,15 @@ Enter password: ********
 
 ## 📌 Step 4️⃣ Mount the Container
 
-Whenever you want to *open* it:
+Whenever you want to _open_ it:
 
 ✅ Graphical:
 
-* Launch VeraCrypt
-* Select the container file
-* Choose a slot
-* Click **Mount**
-* Enter password
+- Launch VeraCrypt
+- Select the container file
+- Choose a slot
+- Click **Mount**
+- Enter password
 
 ✅ Command Line:
 
@@ -186,7 +186,7 @@ veracrypt -d /mnt/veracrypt1
 ## ✅ Tips for Red Team / OPSEC
 
 ⭐ Store your container on external HDD so it's air-gapped when not in use.
-⭐ Use a *strong* password (long passphrase).
+⭐ Use a _strong_ password (long passphrase).
 ⭐ Use ext4 if you only need Linux.
 ⭐ Use exFAT if you want cross-platform (Linux/Windows).
 ⭐ You can resize containers later (but requires recreating them).

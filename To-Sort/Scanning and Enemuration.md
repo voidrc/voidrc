@@ -8,21 +8,22 @@ Identify and enumerate services, configurations, and vulnerabilities across syst
 
 ### 📘 Topics:
 
-* What is enumeration vs scanning
-* Port states (open/closed/filtered)
-* TCP/IP protocols, banners, and service identification
+- What is enumeration vs scanning
+- Port states (open/closed/filtered)
+- TCP/IP protocols, banners, and service identification
 
 ### 🛠️ Tools:
 
-* **Nmap**
+- **Nmap**
 
-  * `-sV`, `-A`, `--script`, `-p-`, `-Pn` flags
-* **Netcat**, **Telnet**, **Banners with Curl/Wget**
+  - `-sV`, `-A`, `--script`, `-p-`, `-Pn` flags
+
+- **Netcat**, **Telnet**, **Banners with Curl/Wget**
 
 ### 🧪 Labs:
 
-* Use VulnHub or TryHackMe's "Nmap" and "Basic Pentesting"
-* Enumerate ports and services manually and with Nmap NSE scripts
+- Use VulnHub or TryHackMe's "Nmap" and "Basic Pentesting"
+- Enumerate ports and services manually and with Nmap NSE scripts
 
 ---
 
@@ -30,20 +31,20 @@ Identify and enumerate services, configurations, and vulnerabilities across syst
 
 ### 📘 Topics:
 
-* Protocol-specific enumeration (FTP, SMB, SNMP, HTTP, etc.)
-* Banner grabbing techniques
-* Common misconfigurations
+- Protocol-specific enumeration (FTP, SMB, SNMP, HTTP, etc.)
+- Banner grabbing techniques
+- Common misconfigurations
 
 ### 🛠️ Tools:
 
-* **Enum4linux-ng**, **smbclient**, **rpcclient**
-* **SNMPwalk**, **onesixtyone**
-* **Telnet**, **Netcat**, **nmap -sC**, **Nmap NSE scripts**
+- **Enum4linux-ng**, **smbclient**, **rpcclient**
+- **SNMPwalk**, **onesixtyone**
+- **Telnet**, **Netcat**, **nmap -sC**, **Nmap NSE scripts**
 
 ### 🧪 Labs:
 
-* Practice on machines with open SMB, FTP, and SNMP
-* Identify shared folders, user accounts, and vulnerable services
+- Practice on machines with open SMB, FTP, and SNMP
+- Identify shared folders, user accounts, and vulnerable services
 
 ---
 
@@ -51,20 +52,20 @@ Identify and enumerate services, configurations, and vulnerabilities across syst
 
 ### 📘 Topics:
 
-* Virtual host discovery
-* Directory and file enumeration
-* Web tech fingerprinting
+- Virtual host discovery
+- Directory and file enumeration
+- Web tech fingerprinting
 
 ### 🛠️ Tools:
 
-* **Gobuster**, **Dirb**, **FFUF**
-* **WhatWeb**, **Wappalyzer**
-* **Nikto**, **Nmap http-enum**, **httprobe**
+- **Gobuster**, **Dirb**, **FFUF**
+- **WhatWeb**, **Wappalyzer**
+- **Nikto**, **Nmap http-enum**, **httprobe**
 
 ### 🧪 Labs:
 
-* DVWA, Mutillidae, and Juice Shop on localhost
-* Enumerate paths, admin panels, backup files
+- DVWA, Mutillidae, and Juice Shop on localhost
+- Enumerate paths, admin panels, backup files
 
 ---
 
@@ -72,21 +73,21 @@ Identify and enumerate services, configurations, and vulnerabilities across syst
 
 ### 📘 Topics:
 
-* Authenticated vs unauthenticated scanning
-* False positives/negatives
-* CVSS scoring, basic risk assessment
+- Authenticated vs unauthenticated scanning
+- False positives/negatives
+- CVSS scoring, basic risk assessment
 
 ### 🛠️ Tools:
 
-* **OpenVAS** / **Greenbone**
-* **Nessus Essentials**
-* **Nuclei** (template-based scanning)
-* **LinEnum**, **Linux Exploit Suggester**, **WinPEAS**
+- **OpenVAS** / **Greenbone**
+- **Nessus Essentials**
+- **Nuclei** (template-based scanning)
+- **LinEnum**, **Linux Exploit Suggester**, **WinPEAS**
 
 ### 🧪 Labs:
 
-* Scan Metasploitable 2 & 3
-* Validate findings manually from vulnerability scanners
+- Scan Metasploitable 2 & 3
+- Validate findings manually from vulnerability scanners
 
 ---
 
@@ -94,36 +95,36 @@ Identify and enumerate services, configurations, and vulnerabilities across syst
 
 ### 📘 Topics:
 
-* Chaining enumeration tools
-* Python automation of scanning workflows
-* Enumeration in Active Directory
+- Chaining enumeration tools
+- Python automation of scanning workflows
+- Enumeration in Active Directory
 
 ### 🛠️ Tools:
 
-* **CrackMapExec**, **BloodHound**, **LDAP queries**
-* **Recon-ng**, **SpiderFoot** (automated recon)
-* Python scripting with `nmap`, `socket`, `requests`, and `paramiko`
+- **CrackMapExec**, **BloodHound**, **LDAP queries**
+- **Recon-ng**, **SpiderFoot** (automated recon)
+- Python scripting with `nmap`, `socket`, `requests`, and `paramiko`
 
 ### 🧪 Labs:
 
-* Use `CrackMapExec` in an AD lab
-* Write a Python script that finds open ports and performs banner grabbing
+- Use `CrackMapExec` in an AD lab
+- Write a Python script that finds open ports and performs banner grabbing
 
 ---
 
 ## 📚 Resources & Practice Platforms
 
-* **Books**:
+- **Books**:
 
-  * *The Hacker Playbook 3*
-  * *Penetration Testing* by Georgia Weidman
-  * *Nmap Network Scanning* by Fyodor
+  - _The Hacker Playbook 3_
+  - _Penetration Testing_ by Georgia Weidman
+  - _Nmap Network Scanning_ by Fyodor
 
-* **Platforms**:
+- **Platforms**:
 
-  * TryHackMe: “Network Services”, “Vulnversity”, “Enumeration”
-  * HackTheBox: Easy boxes for practical enumeration
-  * VulnHub: Metasploitable, Kioptrix, Stapler
+  - TryHackMe: “Network Services”, “Vulnversity”, “Enumeration”
+  - HackTheBox: Easy boxes for practical enumeration
+  - VulnHub: Metasploitable, Kioptrix, Stapler
 
 ---
 

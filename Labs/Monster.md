@@ -12,13 +12,14 @@
 | Cooling         | **Custom water-cooling loop** for CPU + GPU (radiators, pumps, blocks)        | ~1000$                                                                                                    |
 | Case            | Full tower like Phanteks Enthoo Elite                                         | Or custom rack-mount for airflow & expansion                                                              |
 | PSU             | 1600–2000 W 80+ Titanium                                                      | e.g., Seasonic PRIME TX-1600W                                                                             |
-| Networking      | Dual 10GbE NICs plus Wi-Fi 6E                                                 |  optional 40GbE upgrade                                                                                   |
+| Networking      | Dual 10GbE NICs plus Wi-Fi 6E                                                 | optional 40GbE upgrade                                                                                    |
 
 **Estimated Cost**:
-- CPU+board: ~$12k–15k    
+
+- CPU+board: ~$12k–15k
 - GPU: $8.5k (Blackwell) → future Rubin adds ~+10%
 - RAM: $2k+ for 512GB+ ECC
-- Cooling/Case/Storage/PSU: ~$3k–5k      
+- Cooling/Case/Storage/PSU: ~$3k–5k
 
 > **Total**: ~$25k+ for absolute peak — scale down if needed
 
@@ -41,14 +42,15 @@ This builds a **true data center-in-a-box**: massive AI workloads, 100-player Mi
 | **Networking**   | Onboard 2.5Gbps + optional 10Gb NIC (Intel X550, etc.)        | Local lab transfers + remote access                       |
 
 ### What It Will Handle
+
 - Minecraft Server (Spigot/Paper/Forge/Fabric) with 50+ players, 15–20 mods
 
-- Full Linux server stack (Arch/Proxmox) with:    
-    - NGINX reverse proxy
-    - Docker/Podman containers
-    - WireGuard + OpenVPN
-    - Tor hidden services
-    - Nextcloud, Jellyfin, Bitwarden, C2 servers (Covenant, Mythic, etc.)
+- Full Linux server stack (Arch/Proxmox) with:
+  - NGINX reverse proxy
+  - Docker/Podman containers
+  - WireGuard + OpenVPN
+  - Tor hidden services
+  - Nextcloud, Jellyfin, Bitwarden, C2 servers (Covenant, Mythic, etc.)
 - Enterprise-like network simulation: AD domain + CTF VMs (via Proxmox/VMWare)
 - More than powerful enough for everything except AI/LLM work
 - Expandable
@@ -56,31 +58,33 @@ This builds a **true data center-in-a-box**: massive AI workloads, 100-player Mi
 - Quiet enough for home use, powerful enough to scare casual gamers
 
 ### Optional Upgrades
+
 - **ECC RAM + workstation board** if you want maximum uptime
 - **Uninterruptible Power Supply (UPS)** — you’re running services, not a hairdryer
 - **Rackmount chassis** if you’re building out a bigger lab later
 
 ---
+
 ## Need to Have
 
 - High-End Laptop (for mobile uses)
 - Split Keyboard:
-	- Base: Q11
-	- Switches Princess
-	- KeyCaps: ASA (Space-Size compitable, check other profiles too)
+  - Base: Q11
+  - Switches Princess
+  - KeyCaps: ASA (Space-Size compitable, check other profiles too)
 - 2 Wide-Monitors
 - Small Projector
 - Storage:
-	- Raspberry PI
-	- Arduino Set
-	- Flipper Zero
-	- USB Rubber Ducky / Bash Bunny (Hak5)
-	- LAN Turtle / Packet Squirrel (Hak5)
-	- Power Banks & USB Hubs
-	- Lock Picking Kit
-	- Faraday Bags
-	- Proxmark3 RDV4
-	- WiFi Pineapple Mark VII
-	- HackRF One
-	- USB Killer
-	- And many.... MORE
+  - Raspberry PI
+  - Arduino Set
+  - Flipper Zero
+  - USB Rubber Ducky / Bash Bunny (Hak5)
+  - LAN Turtle / Packet Squirrel (Hak5)
+  - Power Banks & USB Hubs
+  - Lock Picking Kit
+  - Faraday Bags
+  - Proxmark3 RDV4
+  - WiFi Pineapple Mark VII
+  - HackRF One
+  - USB Killer
+  - And many.... MORE
