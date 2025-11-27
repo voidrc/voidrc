@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Labs/VirtualBox/01. Installation.md",
+                "file": "Linux/06. File Manipulation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01. Installation"
+              "title": "06. File Manipulation"
             }
           }
         ]
@@ -171,9 +171,11 @@
   },
   "active": "2abe772c7476fdb2",
   "lastOpenFiles": [
-    "Scripting/IDE.md",
-    "Linux/06. File Manipulation.md",
     "Linux/05. File System.md",
+    "Linux/06. File Manipulation.md",
+    "Ethical Hacking/01. Work Space.md",
+    "Labs/VirtualBox/01. Installation.md",
+    "Scripting/IDE.md",
     "Linux/partitioning.md",
     "Linux/BackUp_Options.md",
     "Labs/Monster.md",
@@ -190,13 +192,11 @@
     "Linux/Untitled",
     "Linux/03. History.md",
     "Linux/01. Installing Distro.md",
-    "Ethical Hacking/01. Work Space.md",
     "README.md",
     "CICD/image",
     "CICD/Untitled.md",
     "CICD",
     "Untitled.canvas",
-    "Labs/VirtualBox/01. Installation.md",
     "Labs/VirtualBox/02. VM creation.md",
     "LICENSE.md",
     "templates/5_Structure/Canvases/How to Use Links with Templates.canvas",
