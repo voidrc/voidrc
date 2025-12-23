@@ -1,0 +1,21 @@
+views:
+  - type: table
+    name: Table
+    groupBy:
+      property: file.folder
+      direction: ASC
+    sort:
+      - property: file.name
+        direction: ASC
+  - type: cards
+    name: Cards
+    groupBy:
+      property: file.folder
+      direction: ASC
+    order:
+      - file.name
+      - file.folder
+      - file.size
+    cardSize: 150
+    imageFit: contain
+    imageAspectRatio: 1
