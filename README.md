@@ -6,7 +6,7 @@ this is my archive of operations in cyber-security. some tools survived, some di
 
 ## what’s inside (conceptual)
 
-- **arsenal** → unstable tools, half-baked [scripts](./Scripts/), working junk. _(use at your own risk)_
+**arsenal** → unstable tools, half-baked [scripts](./Scripts/README.md), working junk. _(use at your own risk)_
 - **transmissions** → short briefs, ops notes, cursed speedruns. ([starting point](./Ethical%20Hacking/01.%20Work%20Space.md))
 - **treasure maps** → links, [road-maps](Resources/Root2Red.md).
 

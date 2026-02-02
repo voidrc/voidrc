@@ -4,9 +4,17 @@ views:
     groupBy:
       property: file.folder
       direction: ASC
+    order:
+      - file.name
+      - file.backlinks
+      - file.embeds
+      - file.links
     sort:
       - property: file.name
         direction: ASC
+    columnSize:
+      file.backlinks: 282
+      file.embeds: 127
   - type: cards
     name: Cards
     groupBy:
