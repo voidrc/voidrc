@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Linux/05. File System.md",
+                "file": "Scripting/Python.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "05. File System"
+              "title": "Python"
             }
           }
         ]
@@ -171,6 +171,7 @@
   },
   "active": "479264e78ce3dddc",
   "lastOpenFiles": [
+    "Linux/05. File System.md",
     "Linux/03. History.md",
     "Bug Hunting/2.3 Just Google It.md",
     "Bug Hunting/2. Information Disclosure Vulnerabilities.md",
@@ -185,7 +186,6 @@
     "Linux/07. File Manipulation II.md",
     "Linux/06. File Manipulation I.md",
     "Linux/02. CLI.md",
-    "Linux/05. File System.md",
     "Linux/04. Root.md",
     "To-Sort/VeraCrypt.md",
     "Linux/BackUp_Options.md",
