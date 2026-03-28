@@ -8,16 +8,7 @@ this is my archive of operations in cyber-security. some tools survived, some di
 
 if you want this vault to feel like a real progression and not random chaos, follow the chapter map inside: [Ultimate Journey Protocol](./JOURNEY.md)
 
-this file gives you:
-- chapter-by-chapter order
-- required checkpoints
-- weekly cadence
-- clear "what next" flow
-
 track execution in [Progress Tracker](./PROGRESS_TRACKER.md)
-
-future material that is would be used in next phases lives in:
-- [Yeet](./Yeet/README.md)
 
 ---
 

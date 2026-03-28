@@ -54,11 +54,11 @@ it exists to give you a safe place to build, break, restore, and document what h
 ## phase 1 order
 
 follow this order inside chapter 1:
-1. [Linux Distros](./docs/distros.md)
-2. [Installing Distro](./docs/distro_instalation.md)
-3. [Arming Up](./docs/need_to_have.md)
-4. [QEMU/KVM setup](./docs/QEMU_KVM.md)
-5. [VM creation](controling_vms.md)
+1. [Linux Distros](1_distros.md)
+2. [Installing Distro](2_distro_instalation.md)
+3. [Arming Up](3_need_to_have.md)
+4. [QEMU/KVM setup](4_QEMU_KVM.md)
+5. [VM creation](5_controling_vms.md)
 
 ## next-step
 

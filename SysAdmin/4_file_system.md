@@ -73,7 +73,7 @@ Example layout:
 
 continue here:
 
-- [06. File Manipulation I.md](./06.%20File%20Manipulation%20I.md)
+- [File Manipulation I](5_file_manipulation.md)
 
 global path:
 

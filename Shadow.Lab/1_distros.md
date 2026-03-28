@@ -83,10 +83,10 @@ this is the endgame approach. not where you start.
 if you're still unsure, pick **Kali** or **Parrot** and continue. both are beginner-friendly and have lots of tutorials.
 
 then continue here:
-- [Installing a Distro](./distro_instalation.md)
+- [Installing a Distro](2_distro_instalation.md)
 
 optional reference:
-- [Shadow.Lab map](../README.md)
+- [Shadow.Lab map](Shadow.Lab/README.md)
 
 global path:
 - [Journey](../../JOURNEY.md)

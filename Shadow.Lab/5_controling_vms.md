@@ -10,7 +10,7 @@ A practical reference for day-to-day QEMU/KVM operations using Fedora Server as 
 
 Complete QEMU/KVM host setup first:
 
-- [QEMU/KVM setup](./QEMU_KVM.md)
+- [QEMU/KVM setup](4_QEMU_KVM.md)
 
 Check host status:
 
@@ -270,7 +270,7 @@ No serial console output:
 
 optional reference:
 
-- [Shadow.Lab map](../README.md)
+- [Shadow.Lab map](Shadow.Lab/README.md)
 
 global path:
 

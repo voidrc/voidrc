@@ -110,10 +110,10 @@ sudo virsh net-info lab-net
 
 ## next-step
 
-- [VM creation](controling_vms.md)
+- [VM creation](5_controling_vms.md)
 
 optional reference:
-- [Shadow.Lab map](../README.md)
+- [Shadow.Lab map](Shadow.Lab/README.md)
 
 global path:
 - [Journey](../../JOURNEY.md)

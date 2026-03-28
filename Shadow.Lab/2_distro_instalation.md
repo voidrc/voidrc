@@ -25,7 +25,7 @@ VirtualBox is free software that lets you run VMs on Windows, macOS, or Linux.
 
 an ISO is a disk image — basically a digital version of the installation USB. you download it from the distro's official site.
 
-**not sure which distro to pick?** go back to [distros.md](./distros.md) and use the quick-pick list.
+**not sure which distro to pick?** go back to [distros.md](1_distros.md) and use the quick-pick list.
 
 for this guide, we'll use **Kali Linux** as the example.
 
@@ -100,7 +100,7 @@ this updates all the preinstalled tools to their latest versions. always do this
 
 ## not using VirtualBox?
 
-if you're on Linux already and want to use QEMU/KVM instead, see [QEMU_KVM.md](./QEMU_KVM.md) — more powerful but requires more setup.
+if you're on Linux already and want to use QEMU/KVM instead, see [QEMU_KVM.md](4_QEMU_KVM.md) — more powerful but requires more setup.
 
 ---
 
@@ -112,10 +112,10 @@ if you're on Linux already and want to use QEMU/KVM instead, see [QEMU_KVM.md](.
 come back here after finishing chapter 2. everything from this point on in chapter 1 is about rebuilding the lab environment — treat it as a practical template once you have the fundamentals.
 
 **already comfortable with Linux basics?** keep going below.
-- [Arming up](./need_to_have.md)
+- [Arming up](3_need_to_have.md)
 
 optional reference:
-- [Shadow.Lab map](../README.md)
+- [Shadow.Lab map](Shadow.Lab/README.md)
 
 global path:
 - [Journey](../../JOURNEY.md)

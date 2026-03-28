@@ -38,7 +38,7 @@ This makes it easier to audit or review what was done and when.
 
 continue here:
 
-- [Shadow.Lab/README.md](../Shadow.Lab/README.md)
+- [Root](3_root.md)
 
 global path:
 

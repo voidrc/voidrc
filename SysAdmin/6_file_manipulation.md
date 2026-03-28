@@ -2,7 +2,7 @@
 
 continue here:
 
-- [partitioning.md](./partitioning.md)
+- [soon]()
 
 global path:
 

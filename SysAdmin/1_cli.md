@@ -2,7 +2,6 @@ welcome to linux land — where you’ll hear words like **terminal, console, sh
 to beginners, it all sounds spooky. but trust me: the real magic lives here. GUIs are fine for comfort, but **true power = CLI**.
 
 still confused? here’s the cheat sheet:
-
 - **Terminal (aka Terminal Emulator)** → the app you open to type commands. it’s your window into the system.
 - **Shell** → the program that lives inside the terminal. it takes your commands and tells the **kernel** what to do. common shells: `bash`, `zsh`, `fish`.
 - **Console** → old-school term for a direct system interface. in practice, people mix it with “terminal.”
@@ -135,10 +134,8 @@ grep --help
 ## next-step
 
 continue here:
-
-- [03. History.md](./03.%20History.md)
+- [History](2_history.md)
 
 global path:
-
 - [Ultimate Journey Protocol](../JOURNEY.md)
 - [Progress Tracker](../PROGRESS_TRACKER.md)
