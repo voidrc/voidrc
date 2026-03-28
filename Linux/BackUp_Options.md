@@ -171,3 +171,16 @@ last-resort: clone your entire disk bit by bit.
 - **pros**: easy, safe interface.
 - **cons**: slower than CLI clonezilla.
 - **use-case**: quick full-disk backup before experiments.
+
+---
+
+## next-step
+
+sysadmin chapter done. move to:
+
+- [Scripting/Bash/README.md](../Scripting/Bash/README.md)
+
+global path:
+
+- [Ultimate Journey Protocol](../JOURNEY.md)
+- [Progress Tracker](../PROGRESS_TRACKER.md)

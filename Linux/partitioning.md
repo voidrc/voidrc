@@ -56,3 +56,16 @@ UUID=<UUID of storage>  /media/<youruser>  btrfs  deafults,noatime,compress=zstd
 ```
 
 > Add snapper rule just in-case
+
+---
+
+## next-step
+
+continue here:
+
+- [BackUp_Options.md](./BackUp_Options.md)
+
+global path:
+
+- [Ultimate Journey Protocol](../JOURNEY.md)
+- [Progress Tracker](../PROGRESS_TRACKER.md)
