@@ -31,42 +31,14 @@ sudo systemctl status sshd
 ss -tlnp | grep :22
 ```
 
----
-### Check Connection:
-```bash
-ssh username@172.16.0.11
-```
-
-Use your ASUS login password.  
-If this works, networking and SSH service are correct.
-
-Exit after testing:
-```bash
-exit
-```
 
 ---
-On macOS terminal:
+### Copy Public Key to Server
 ```bash
-ssh-keygen -t ed25519 -C "athena2medusa"
+ssh-copy-id USER@IP
 ```
 
-Press Enter to accept defaults.  
-Optional: set passphrase (recommended).
-
-This creates:
-```
-~/.ssh/id_ed25519
-~/.ssh/id_ed25519.pub
-```
-
----
-### Copy Public Key to ASUS
-```bash
-ssh-copy-id username@172.16.0.11
-```
-
-Enter ASUS password once.  
+Enter USER password once.  
 This installs the key into:
 ```
 ~/.ssh/authorized_keys
@@ -75,7 +47,7 @@ This installs the key into:
 ---
 ### Test Passwordless Login
 ```bash
-ssh username@172.16.0.11
+ssh USER@IP
 ```
 
 You should log in **without password prompt**  
@@ -87,7 +59,7 @@ You should log in **without password prompt**
 
 Only do this **after confirming key login works**.
 
-On ASUS:
+On server:
 ```bash
 sudo vim /etc/ssh/sshd_config
 ```
@@ -107,7 +79,7 @@ Now login is key-only.
 
 ---
 
-### Optional: Create SSH Host Alias (Mac)
+### Optional: Create SSH Host Alias
 
 Edit config:
 ```bash
@@ -116,31 +88,13 @@ vim ~/.ssh/config
 
 Add:
 ```
-Host medusa
-    HostName 172.16.0.11
-    User username
+Host SERVER
+    HostName IP
+    User USER
     IdentityFile ~/.ssh/id_ed25519
 ```
 
 Now connect with:
 ```bash
-ssh medusa
+ssh SERVER
 ```
-
----
-
-### Optional — Allow ASUS to SSH Into Mac
-
-macOS SSH server is off by default.
-
-Enable:
-System Settings → General → Sharing → **Remote Login**
-
-Allow your user.
-
-Then from ASUS:
-```bash
-ssh mac_username@172.16.0.10
-```
-
-To set up passwordless in this direction, repeat key generation on ASUS and copy key to Mac.

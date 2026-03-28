@@ -1,7 +1,7 @@
 ## QEMU/KVM
 Update the system and install the full virtualization stack:
 ```bash
-sudo pacman -Syu qemu-full virt-manager libvirt dnsmasq bridge-utils ebtables iptables-nft edk2-ovmf virt-install
+sudo pacman -Syu qemu-full virt-manager libvirt dnsmasq ebtables iptables-nft edk2-ovmf virt-install
 ```
 
 Enable libvirt to start automatically at boot and start it now:

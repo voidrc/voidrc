@@ -41,12 +41,3 @@ Verify:
 ```bash
 ip addr show enp108s0
 ```
-
----
-
-### macOS
-System Settings → Network → Ethernet → TCP/IP
-- Configure IPv4: **Manually**
-- IP address: **172.16.0.10**
-- Subnet mask: **255.255.255.0**
-- Router: leave empty

@@ -1,13 +1,10 @@
 ## Current Hardware
 
-- **MacBook Air M4 (16GB / 256GB)** — OrbStack  
-    Role: admin workstation, documentation, light local development
-
-- **ASUS ROG Strix G16 (16GB / 1.5TB + RTX 4060)** — CachyOS + QEMU/KVM + Podman  
-    Role: always-on homelab host and gaming system
+- **ASUS ROG Strix G16 (16GB / 1.5TB + RTX 4060)** — CachyOS + QEMU/KVM + Docker
+    Role: Development and gaming rig
 
 - **500GB External HDD**  
-    Encrypted offline backups, VM exports, packet captures
+    Encrypted DataBase and Logs
 
 - **2 × 32GB USB drives**
     1. Installer / rescue media
@@ -26,25 +23,20 @@
 - CLI-first workflow    
 - VM operating system: **Fedora Server**
 - Home network: **172.16.0.0/24**
-- Container strategy: VM-first deployment, later migration to **Podman**  
-    (Docker has compatibility issues on my ASUS system, i don't know why)
+- Container strategy: VM-first deployment, later migration to **Docker**  
 
 ---
 
 ## Device Roles
 
-**Mac**
-- Control plane
-- Documentation and runbooks
-- Development and Git workflows
-
 **ASUS**
+- Development
+- Testing
 - KVM / libvirt host
-- Runs lab virtual machines continuously
 - Gaming workstation
 
 **External HDD**
-- Encrypted backups
+- Encrypted DataBases
 - Evidence storage for captures and snapshots
 
 **USB #1**
