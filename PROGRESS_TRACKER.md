@@ -22,32 +22,10 @@ Fill in:
 
 ---
 
-## Bootstrap
-
-- [ ] Read: [Ethical Hacking/01. Work Space.md](./Ethical%20Hacking/01.%20Work%20Space.md)
-- [ ] Read: [Linux/01. Installing Distro.md](./Linux/01.%20Installing%20Distro.md)
-- [ ] Read: [Linux/02. CLI.md](./Linux/02.%20CLI.md)
-- [ ] Read: [Linux/03. History.md](./Linux/03.%20History.md)
-- [ ] VM or dual boot configured
-- [ ] Snapshot/rollback tested
-- [ ] Comfortable enough in terminal to continue
-
-Bootstrap completion date:
-
----
-
 ## Phase 1 Chapter 1: Shadow.Lab
 
 - [ ] [Shadow.Lab/README.md](./Shadow.Lab/README.md)
-- [ ] [Shadow.Lab/docs/static-IP.md](./Shadow.Lab/docs/static-IP.md)
-- [ ] [Shadow.Lab/docs/SSH-setup.md](./Shadow.Lab/docs/SSH-setup.md)
-- [ ] [Shadow.Lab/docs/QEMU_KVM.md](./Shadow.Lab/docs/QEMU_KVM.md)
-- [ ] [Shadow.Lab/docs/basic-vm.md](./Shadow.Lab/docs/basic-vm.md)
-- [ ] [Shadow.Lab/docs/Recon.md](./Shadow.Lab/docs/Recon.md)
-- [ ] [Shadow.Lab/docs/NMAP.md](./Shadow.Lab/docs/NMAP.md)
-- [ ] [Shadow.Lab/docs/Scanning and Enemuration.md](./Shadow.Lab/docs/Scanning%20and%20Enemuration.md)
-- [ ] [Shadow.Lab/docs/Upgrading Shell.md](./Shadow.Lab/docs/Upgrading%20Shell.md)
-- [ ] [Shadow.Lab/docs/HoneyPot.md](./Shadow.Lab/docs/HoneyPot.md)
+- [ ] [Shadow.Lab/docs/static-IP.md]
 - [ ] Static IP plan tested
 - [ ] SSH access works cleanly
 - [ ] At least one VM created and documented

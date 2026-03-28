@@ -1,41 +1,76 @@
-## QEMU/KVM
-Update the system and install the full virtualization stack:
+# QEMU/KVM — Virtualization Setup
+
+## what is QEMU/KVM?
+
+QEMU/KVM is a virtualization stack built into the Linux kernel. it's what powers the lab environment used in this guide.
+
+compared to VirtualBox:
+- **faster** — VMs run closer to native speed via hardware virtualization
+- **more control** — networking, snapshots, storage are all configurable at a low level
+- **CLI-first** — you manage VMs with tools like `virsh` and `virt-install`
+
+> this is the setup used throughout chapter 1. if you're on Arch, these commands work as-is. other distros may have different package names.
+
+---
+
+## step 1: install the virtualization stack
+
+update the system and install everything needed:
 ```bash
 sudo pacman -Syu qemu-full virt-manager libvirt dnsmasq ebtables iptables-nft edk2-ovmf virt-install
 ```
 
-Enable libvirt to start automatically at boot and start it now:
+**what these do:**
+
+| package        | purpose                                      |
+| -------------- | -------------------------------------------- |
+| `qemu-full`    | the emulator/hypervisor core                 |
+| `virt-manager` | GUI frontend for managing VMs                |
+| `libvirt`      | daemon that manages virtualization resources |
+| `dnsmasq`      | DHCP and DNS for virtual networks            |
+| `iptables-nft` | firewall rules (required for NAT networking) |
+| `edk2-ovmf`    | UEFI firmware support for VMs                |
+| `virt-install` | CLI tool for creating VMs                    |
+
+---
+
+## step 2: enable libvirt
+
+enable and start the libvirt daemon:
 ```bash
-sudo systemctl enable libvirtd
-sudo systemctl start libvirtd
+sudo systemctl enable --now libvirtd
 ```
 
-Add your user to the **libvirt** group to manage virtual machines without root privileges:
+add yourself to the `libvirt` group so you can manage VMs without `sudo`:
 ```bash
 sudo usermod -aG libvirt $USER
 ```
-> Log out and log back in (or reboot) for group changes to take effect.
 
-Check that libvirt can connect to the system hypervisor and list virtual machines:
+> log out and back in (or reboot) for the group change to take effect.
+
+verify it's working:
 ```bash
 virsh --connect qemu:///system list --all
 ```
 
-Check available virtual networks:
+check available virtual networks:
 ```bash
 virsh net-list --all
 ```
 
 ---
-### Create a Custom libvirt Network (lab-net)
 
-Create the network definition file on the ASUS system:
+## step 3: create the lab network (lab-net)
+
+the lab uses a custom NAT network called `lab-net`. this gives all VMs a private internal network with internet access via NAT.
+
+create the network definition file:
 ```bash
 sudo vim /tmp/lab-net.xml
 ```
 
-Paste the following configuration:
-```
+paste in this configuration:
+```xml
 <network>
   <name>lab-net</name>
   <forward mode='nat'/>
@@ -48,31 +83,38 @@ Paste the following configuration:
   </ip>
 </network>
 ```
-This defines a NAT network with bridge `virbr10`, internal domain `shadow_lab`, and DHCP range `10.10.10.100–199`.
 
-> Store a copy in your repository for reproducibility.
+**what this defines:**
+- network name: `lab-net`
+- bridge interface: `virbr10`
+- internal domain: `shadow_lab`
+- gateway: `10.10.10.1`
+- DHCP range: `10.10.10.2 – 10.10.10.200`
 
-Register the network with libvirt:
+> save a copy of this file in your repo for reproducibility.
+
+register, start, and enable the network:
 ```bash
 sudo virsh net-define /tmp/lab-net.xml
-```
-
-Start the network:
-```bash
 sudo virsh net-start lab-net
-```
-
-Enable automatic start at boot:
-```bash
 sudo virsh net-autostart lab-net
 ```
 
-List all virtual networks:
+verify:
 ```bash
 sudo virsh net-list --all
-```
-
-View detailed information:
-```bash
 sudo virsh net-info lab-net
 ```
+
+---
+
+## next-step
+
+- [VM creation](controling_vms.md)
+
+optional reference:
+- [Shadow.Lab map](../README.md)
+
+global path:
+- [Journey](../../JOURNEY.md)
+- [Progress Tracker](../../PROGRESS_TRACKER.md)

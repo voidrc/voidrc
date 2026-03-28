@@ -1,11 +1,9 @@
 # Ultimate Journey Protocol
 
 This vault is strongest when followed in order.
-
 Use this file as your navigation spine for the active phase.
 
 execution tracker:
-
 - [Progress Tracker](./PROGRESS_TRACKER.md)
 
 ---
@@ -18,31 +16,13 @@ execution tracker:
 4. Keep a weekly log of what you tested and broke.
 5. Move to the next chapter only after completing the checkpoint.
 
----
-
-## Bootstrap
-
-Goal: build a safe and repeatable workspace.
-
-1. [Ethical Hacking/01. Work Space.md](./Ethical%20Hacking/01.%20Work%20Space.md)
-2. [Linux/01. Installing Distro.md](./Linux/01.%20Installing%20Distro.md)
-3. [Linux/02. CLI.md](./Linux/02.%20CLI.md)
-4. [Linux/03. History.md](./Linux/03.%20History.md)
-
-Checkpoint:
-
-- You have a VM (or dual boot) ready.
-- You can snapshot/rollback safely.
-- You are comfortable enough in terminal to survive the lab.
 
 ---
 
 ## Phase 1
 
-Phase 1 is the active path right now.
-
+Phase 1 is about Operating System.
 It is split into 3 chapters:
-
 1. Shadow.Lab
 2. SysAdmin
 3. Bash (basic automation)
