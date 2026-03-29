@@ -10,6 +10,15 @@ if you want this vault to feel like a real progression and not random chaos, fol
 
 track execution in [Progress Tracker](./PROGRESS_TRACKER.md)
 
+for the long-form career plan and training sequence:
+
+- [Root2Red Roadmap](./Root2Red.md)
+
+for curated learning references and practice lanes:
+
+- [Root2Red Reference Bank](./Root2Red.md#practice-playground-bank)
+- [Languages](./Languages.md)
+
 ---
 
 ## how to use (with brain)

@@ -23,6 +23,7 @@ execution tracker:
 
 Phase 1 is about Operating System.
 It is split into 3 chapters:
+
 1. Shadow.Lab
 2. SysAdmin
 3. Bash (basic automation)
@@ -55,11 +56,12 @@ Goal: become dangerous in Linux administration, not just comfortable in Linux.
 Goal: automate operator work instead of repeating it by hand.
 
 1. [Bash](./Scripting/Bash/README.md)
-2. [Scripting](./Resources/Scripting.md)
+2. [Languages](./Languages.md)
 
 ---
 
 ## Deferred Material
 
 Future topics and deferred notes live here:
+
 - [Yeet](./Yeet/README.md)

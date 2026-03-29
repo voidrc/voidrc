@@ -11,14 +11,10 @@
             "id": "479264e78ce3dddc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "JOURNEY.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "JOURNEY"
+              "title": "New tab"
             }
           }
         ]
@@ -171,9 +167,15 @@
   },
   "active": "479264e78ce3dddc",
   "lastOpenFiles": [
-    "PROGRESS_TRACKER.md",
+    "Resources/Scripting.md",
+    "Languages.md",
+    "Resources/Languages.md",
+    "Resources/Programming.md",
+    "Root2Red.md",
     "README.md",
+    "Resources/Root2Red_.md",
     "JOURNEY.md",
+    "PROGRESS_TRACKER.md",
     "SysAdmin/2_history.md",
     "Yeet/Linux/static-IP.md",
     "Yeet/Linux/partitioning.md",
@@ -195,12 +197,6 @@
     "Shadow.Lab/1_distros.md",
     "Linux/SSH-setup.md",
     "Shadow.Lab/docs/SSH-setup.md",
-    "Shadow.Lab/docs/vm_setup.md",
-    "Shadow.Lab/docs/basic-vm.md",
-    "Linux/Upgrading Shell.md",
-    "Linux/static-IP.md",
-    "Yeet/Scanning and Enemuration.md",
-    "Yeet/HoneyPot.md",
     "Base.base",
     "Yeet/TUI",
     "Yeet/Scripts/RedLogs/transfer.sh",

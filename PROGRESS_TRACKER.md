@@ -30,9 +30,10 @@ Reference path:
 ## Phase 1 Chapter 3: Bash (Basic Automation)
 
 - [ ] [Bash](./Scripting/Bash/README.md)
-- [ ] [Scripting](./Resources/Scripting.md)
+- [ ] [Languages](./Languages.md)
 
 ---
 
 Reference queue for later phases:
+
 - [Yeet](./Yeet/README.md)

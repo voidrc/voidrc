@@ -1,20 +1,10 @@
 # Bash (Basic Automation)
 
-this is chapter 3 of active phase 1.
+this is chapter 3 of phase 1.
 
 the point here is not to become a programmer first.
 
 the point is to stop doing operator work manually when the shell can do it faster.
-
----
-
-## chapter scope
-
-- shell basics and script structure
-- variables, quoting, and exit codes
-- conditionals, loops, and functions
-- text processing with `grep`, `sed`, `awk`, and `cut`
-- simple automation for logs, backups, and environment setup
 
 ---
 
