@@ -1,48 +1,63 @@
-# .voidrc
+# 🌌 Voidrc
 
-this is my archive of operations in cyber-security. some tools survived, some didn’t. either way, the wreckage is here for future looters.
-
----
-
-## systematic path (start here)
-
-if you want this vault to feel like a real progression and not random chaos, follow the chapter map inside: [Ultimate Journey Protocol](./JOURNEY.md)
-
-track execution in [Progress Tracker](./PROGRESS_TRACKER.md)
-
-for the long-form career plan and training sequence:
-
-- [Root2Red Roadmap](./Root2Red.md)
-
-for curated learning references and practice lanes:
-
-- [Root2Red Reference Bank](./Root2Red.md#practice-playground-bank)
-- [Languages](./Languages.md)
+<div align="center">
+  <h3>Strike. Secure. Vanish.</h3>
+  <p align="center">
+    <strong>CTO @ INTELLEX | Founder, Shadow.Lab | Security Researcher</strong>
+  </p>
+</div>
 
 ---
 
-## how to use (with brain)
+### ⚡ Executive Summary
 
-1. **clone** → `git clone https://github.com/voidrc/voidrc.git`
-2. **stare** → at markdowns. feel nothing. run nothing.
-3. **realize** → still nothing? maybe you cloned the wrong universe. research [Obsidian](https://obsidian.md/) anyway.
+As the **CTO of INTELLEX**, I lead the technical vision and infrastructure strategy for high-stakes digital operations. Parallel to my executive role, I spearhead **Shadow.Lab**, a specialized collective of security researchers focused on offensive security and vulnerability analysis.
 
----
-
-## don’t be karen
-
-> this isn’t a résumé. this is a _weapon cache_.  
-> those who get it will follow.  
-> those who don’t… search for the fuck i gave.
-
-— **void-strike**
-
-_bug reports → issues._
-_story to share →pull request._
-_fan mail → /dev/null_
+- 🛡️ **Shadow.Lab:** Directing a team of dedicated security researchers in the pursuit of "Grey Hat" excellence.
+- 🏗️ **Enterprise Architecture:** Designing scalable, secure systems with a primary focus on **Java** and **Linux** environments.
+- 🛠️ **Engineering:** Deep-diving into backend performance and security protocols using Java, Rust, Go, C/C++ and Python.
+- 🛰️ **Mission:** Bridging the gap between corporate innovation and cutting-edge security research.
 
 ---
 
-## license
+### 🛠️ Tech Stack & Focus
 
-MIT. steal my chaos, but don’t cry when it bites back.
+| Category           | Specialization                                         |
+| :----------------- | :----------------------------------------------------- |
+| **Core Language**  | **Java** (Enterprise & Security Architecture)          |
+| **Secondary**      | Rust, Go, Python, C/C++, SQL                           |
+| **Infrastructure** | **Arch Linux**, Fedora Linux, Server Hardening, DevOps |
+| **Security**       | Red Teaming, Research, Threat Modeling                 |
+
+---
+
+### 🚀 Leadership & Operations
+
+#### **CTO | INTELLEX**
+Overseeing full-stack technical direction, engineering teams, and long-term product roadmaps.
+
+#### **Lead Researcher | Shadow.Lab**
+A team of elite security researchers operating in the intersection of ethics and exploration. We focus on:
+- Advanced Penetration Testing
+- Vulnerability Research
+- Secure System Design
+
+---
+
+### 📊 Network & Impact
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=voidrc&show_icons=true&theme=dark&bg_color=000000&title_color=888888&text_color=aaaaaa&icon_color=666666" alt="Voidrc's GitHub stats" />
+</div>
+
+---
+
+### 🤝 Contact
+
+- **Corporate:** CTO @ INTELLEX
+- **Research:** Shadow.Lab
+- **Interests:** Collaborative security research and high-performance Java architecture.
+
+<p align="center">
+  <i>"Where Logic Ends, the Void Begins."</i>
+</p>

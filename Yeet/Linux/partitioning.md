@@ -8,14 +8,13 @@ sudo mkfs.btrfs -f /dev/sdX
 
 ```bash
 sudo mkdir -p /media/$USER
-sudo chown $USER:$USER /media/$USER
 sudo mount /dev/sdX /media/$USER
+sudo chown $USER:$USER /media/$USER
 ```
 
 - Create folders
 
 ```bash
-mkdir /media/$USER/Courses/
 mkdir /media/$USER/Documents/
 mkdir /media/$USER/Git/
 mkdir /media/$USER/Music/
@@ -26,7 +25,6 @@ mkdir /media/$USER/Videos/
 - Move the data
 
 ```bash
-sudo rsync -avh --progress ~/Courses/ /media/$USER/Courses/
 sudo rsync -avh --progress ~/Documents/ /media/$USER/Documents/
 sudo rsync -avh --progress ~/Git/ /media/$USER/Git/
 sudo rsync -avh --progress ~/Music/ /media/$USER/Music/
@@ -34,12 +32,21 @@ sudo rsync -avh --progress ~/Pictures/ /media/$USER/Pictures/
 sudo rsync -avh --progress ~/Videos/ /media/$USER/Videos/
 ```
 
-> Check that the data has been copied:
+> Check that the data has been copied
+
+- Delete Old Data
+
+```bash
+rm -rf ~/Documents
+rm -rf ~/Git
+rm -rf ~/Music
+rm -rf ~/Pictures
+rm -rf ~/Videos
+```
 
 - Link
 
 ```bash
-ln -s /media/$USER/Courses ~/Courses
 ln -s /media/$USER/Documents ~/Documents
 ln -s /media/$USER/Git ~/Git
 ln -s /media/$USER/Music ~/Music

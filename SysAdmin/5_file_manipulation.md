@@ -173,7 +173,7 @@ These are **pagers**, programs that let you scroll within long files.
 
 continue here:
 
-- [07. File Manipulation II](6_file_manipulation.md)
+- [File Manipulation II](6_file_manipulation.md)
 
 global path:
 
