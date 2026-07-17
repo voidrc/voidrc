@@ -20,6 +20,7 @@ voidrc@shadowlab:~$ cat /etc/motd
 | **Core Language**  | **Java** (Enterprise & Security Architecture)          |
 | **Secondary**      | Rust, Go, Python, C/C++, SQL, Bash                     |
 | **Infrastructure** | **Arch Linux**, Fedora Linux, Server Hardening         |
+| **SysAdmin**       | Linux Administration, Networking, Virtualization       |
 | **Security**       | Red Teaming, Research, Threat Modeling                 |
 
 ---
@@ -67,6 +68,50 @@ voidrc@shadowlab:~$ cat /etc/motd
 ![Vault](https://img.shields.io/badge/Vault-0d1117?style=for-the-badge&logo=vault&logoColor=00FF41)
 ![Trivy](https://img.shields.io/badge/Trivy-0d1117?style=for-the-badge&logo=trivy&logoColor=00FF41)
 ![SonarQube](https://img.shields.io/badge/SonarQube-0d1117?style=for-the-badge&logo=sonarqube&logoColor=00FF41)
+
+---
+
+## 🖥️ SysAdmin Stack
+
+### Operating Systems
+![Arch Linux](https://img.shields.io/badge/Arch_Linux-0d1117?style=for-the-badge&logo=archlinux&logoColor=00FF41)
+![Fedora](https://img.shields.io/badge/Fedora-0d1117?style=for-the-badge&logo=fedora&logoColor=00FF41)
+![Debian](https://img.shields.io/badge/Debian-0d1117?style=for-the-badge&logo=debian&logoColor=00FF41)
+![FreeBSD](https://img.shields.io/badge/FreeBSD-0d1117?style=for-the-badge&logo=freebsd&logoColor=00FF41)
+
+### Virtualization & Hypervisors
+![Proxmox](https://img.shields.io/badge/Proxmox-0d1117?style=for-the-badge&logo=proxmox&logoColor=00FF41)
+![KVM/QEMU](https://img.shields.io/badge/KVM%2FQEMU-0d1117?style=for-the-badge&logo=qemu&logoColor=00FF41)
+![VMware](https://img.shields.io/badge/VMware-0d1117?style=for-the-badge&logo=vmware&logoColor=00FF41)
+![VirtualBox](https://img.shields.io/badge/VirtualBox-0d1117?style=for-the-badge&logo=virtualbox&logoColor=00FF41)
+
+### Networking & Firewalls
+![pfSense](https://img.shields.io/badge/pfSense-0d1117?style=for-the-badge&logo=pfsense&logoColor=00FF41)
+![OpenWrt](https://img.shields.io/badge/OpenWrt-0d1117?style=for-the-badge&logo=openwrt&logoColor=00FF41)
+![WireGuard](https://img.shields.io/badge/WireGuard-0d1117?style=for-the-badge&logo=wireguard&logoColor=00FF41)
+![OpenVPN](https://img.shields.io/badge/OpenVPN-0d1117?style=for-the-badge&logo=openvpn&logoColor=00FF41)
+![iptables/nftables](https://img.shields.io/badge/iptables%2Fnftables-0d1117?style=for-the-badge&logo=linux&logoColor=00FF41)
+
+### Services & Directory
+![OpenSSH](https://img.shields.io/badge/OpenSSH-0d1117?style=for-the-badge&logo=openssh&logoColor=00FF41)
+![Bind9 DNS](https://img.shields.io/badge/Bind9_DNS-0d1117?style=for-the-badge&logo=isc&logoColor=00FF41)
+![Postfix](https://img.shields.io/badge/Postfix-0d1117?style=for-the-badge&logo=gnu&logoColor=00FF41)
+![LDAP](https://img.shields.io/badge/LDAP-0d1117?style=for-the-badge&logo=openid&logoColor=00FF41)
+![Samba](https://img.shields.io/badge/Samba-0d1117?style=for-the-badge&logo=linux&logoColor=00FF41)
+
+### Storage & Backup
+![ZFS](https://img.shields.io/badge/ZFS-0d1117?style=for-the-badge&logo=openzfs&logoColor=00FF41)
+![Btrfs](https://img.shields.io/badge/Btrfs-0d1117?style=for-the-badge&logo=linux&logoColor=00FF41)
+![Ceph](https://img.shields.io/badge/Ceph-0d1117?style=for-the-badge&logo=ceph&logoColor=00FF41)
+![rsync](https://img.shields.io/badge/rsync-0d1117?style=for-the-badge&logo=gnubash&logoColor=00FF41)
+![Restic](https://img.shields.io/badge/Restic-0d1117?style=for-the-badge&logo=databricks&logoColor=00FF41)
+
+### Shell & System Tooling
+![Bash](https://img.shields.io/badge/Bash-0d1117?style=for-the-badge&logo=gnubash&logoColor=00FF41)
+![Zsh](https://img.shields.io/badge/Zsh-0d1117?style=for-the-badge&logo=zsh&logoColor=00FF41)
+![systemd](https://img.shields.io/badge/systemd-0d1117?style=for-the-badge&logo=linux&logoColor=00FF41)
+![Tmux](https://img.shields.io/badge/Tmux-0d1117?style=for-the-badge&logo=tmux&logoColor=00FF41)
+![Neovim](https://img.shields.io/badge/Neovim-0d1117?style=for-the-badge&logo=neovim&logoColor=00FF41)
 
 ---
 
