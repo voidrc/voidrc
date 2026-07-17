@@ -84,6 +84,7 @@ voidrc@shadowlab:~$ cat /etc/motd
 ![KVM/QEMU](https://img.shields.io/badge/KVM%2FQEMU-0d1117?style=for-the-badge&logo=qemu&logoColor=00FF41)
 ![VMware](https://img.shields.io/badge/VMware-0d1117?style=for-the-badge&logo=vmware&logoColor=00FF41)
 ![VirtualBox](https://img.shields.io/badge/VirtualBox-0d1117?style=for-the-badge&logo=virtualbox&logoColor=00FF41)
+![LXC](https://img.shields.io/badge/LXC-0d1117?style=for-the-badge&logo=linuxcontainers&logoColor=00FF41)
 
 ### Networking & Firewalls
 ![pfSense](https://img.shields.io/badge/pfSense-0d1117?style=for-the-badge&logo=pfsense&logoColor=00FF41)
@@ -98,6 +99,15 @@ voidrc@shadowlab:~$ cat /etc/motd
 ![Postfix](https://img.shields.io/badge/Postfix-0d1117?style=for-the-badge&logo=gnu&logoColor=00FF41)
 ![LDAP](https://img.shields.io/badge/LDAP-0d1117?style=for-the-badge&logo=openid&logoColor=00FF41)
 ![Samba](https://img.shields.io/badge/Samba-0d1117?style=for-the-badge&logo=linux&logoColor=00FF41)
+![NFS](https://img.shields.io/badge/NFS-0d1117?style=for-the-badge&logo=linux&logoColor=00FF41)
+![FreeIPA](https://img.shields.io/badge/FreeIPA-0d1117?style=for-the-badge&logo=freebsd&logoColor=00FF41)
+
+### Web Servers & Load Balancing
+![Apache](https://img.shields.io/badge/Apache-0d1117?style=for-the-badge&logo=apache&logoColor=00FF41)
+![Caddy](https://img.shields.io/badge/Caddy-0d1117?style=for-the-badge&logo=caddy&logoColor=00FF41)
+![HAProxy](https://img.shields.io/badge/HAProxy-0d1117?style=for-the-badge&logo=haproxy&logoColor=00FF41)
+![Keepalived](https://img.shields.io/badge/Keepalived-0d1117?style=for-the-badge&logo=linux&logoColor=00FF41)
+![Let's Encrypt](https://img.shields.io/badge/Let's_Encrypt-0d1117?style=for-the-badge&logo=letsencrypt&logoColor=00FF41)
 
 ### Storage & Backup
 ![ZFS](https://img.shields.io/badge/ZFS-0d1117?style=for-the-badge&logo=openzfs&logoColor=00FF41)
@@ -105,6 +115,20 @@ voidrc@shadowlab:~$ cat /etc/motd
 ![Ceph](https://img.shields.io/badge/Ceph-0d1117?style=for-the-badge&logo=ceph&logoColor=00FF41)
 ![rsync](https://img.shields.io/badge/rsync-0d1117?style=for-the-badge&logo=gnubash&logoColor=00FF41)
 ![Restic](https://img.shields.io/badge/Restic-0d1117?style=for-the-badge&logo=databricks&logoColor=00FF41)
+![LVM/RAID](https://img.shields.io/badge/LVM%2FRAID-0d1117?style=for-the-badge&logo=linux&logoColor=00FF41)
+
+### Hardening & Access Control
+![SELinux](https://img.shields.io/badge/SELinux-0d1117?style=for-the-badge&logo=linux&logoColor=00FF41)
+![AppArmor](https://img.shields.io/badge/AppArmor-0d1117?style=for-the-badge&logo=linux&logoColor=00FF41)
+![Fail2ban](https://img.shields.io/badge/Fail2ban-0d1117?style=for-the-badge&logo=fortinet&logoColor=00FF41)
+![auditd](https://img.shields.io/badge/auditd-0d1117?style=for-the-badge&logo=linux&logoColor=00FF41)
+![sudo/PAM](https://img.shields.io/badge/sudo%2FPAM-0d1117?style=for-the-badge&logo=gnubash&logoColor=00FF41)
+
+### Monitoring & Logging
+![Zabbix](https://img.shields.io/badge/Zabbix-0d1117?style=for-the-badge&logo=zabbix&logoColor=00FF41)
+![Nagios](https://img.shields.io/badge/Nagios-0d1117?style=for-the-badge&logo=nagios&logoColor=00FF41)
+![Netdata](https://img.shields.io/badge/Netdata-0d1117?style=for-the-badge&logo=netdata&logoColor=00FF41)
+![journald/rsyslog](https://img.shields.io/badge/journald%2Frsyslog-0d1117?style=for-the-badge&logo=linux&logoColor=00FF41)
 
 ### Shell & System Tooling
 ![Bash](https://img.shields.io/badge/Bash-0d1117?style=for-the-badge&logo=gnubash&logoColor=00FF41)
@@ -112,6 +136,8 @@ voidrc@shadowlab:~$ cat /etc/motd
 ![systemd](https://img.shields.io/badge/systemd-0d1117?style=for-the-badge&logo=linux&logoColor=00FF41)
 ![Tmux](https://img.shields.io/badge/Tmux-0d1117?style=for-the-badge&logo=tmux&logoColor=00FF41)
 ![Neovim](https://img.shields.io/badge/Neovim-0d1117?style=for-the-badge&logo=neovim&logoColor=00FF41)
+![cron/systemd--timers](https://img.shields.io/badge/cron%2Fsystemd--timers-0d1117?style=for-the-badge&logo=linux&logoColor=00FF41)
+![GRUB](https://img.shields.io/badge/GRUB-0d1117?style=for-the-badge&logo=gnu&logoColor=00FF41)
 
 ---
 
